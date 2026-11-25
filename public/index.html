@@ -142,6 +142,8 @@ body{background:#FBF8F3}
 @media (max-width: 480px){.mk-root{--gx:16px}}
 @media (min-width: 1101px) and (max-width: 1240px){.mk-fc{right:-12px !important}}
 #mk-pv[hidden]{display:none}
+/* Carte prix à côté du programme : rappel sur ordinateur uniquement (sur mobile, la barre du bas affiche déjà le prix) */
+@media (max-width: 959px){.mk-pcard{display:none !important}}
 /* Bloc « Yassine Bougafa, fondateur » : lien vers la section formateur */
 .mk-bio{border:1px solid transparent;transition:border-color .2s ease,background-color .2s ease}
 .mk-bio:hover{border-color:color-mix(in srgb,var(--d-accent) 55%,transparent);background:color-mix(in srgb,var(--d-bg) 65%,var(--d-card)) !important}
@@ -694,23 +696,12 @@ Offre de lancement : <strong style="font-weight: 700;">-10 % pour les 10 premiè
 
 </div>
 
-<aside class="mk-sticky" style="flex: 1 1 320px; min-width: 0; align-self: flex-start;">
+<aside class="mk-sticky mk-pcard" style="flex: 1 1 320px; min-width: 0; align-self: flex-start;">
 <div style="background: var(--d-bg); color: var(--d-ink); border-radius: 20px; padding: clamp(18px, 4.5vw, 22px); box-shadow: 0 24px 60px rgba(15,17,23,.18);">
-<div style="display: flex; align-items: center; justify-content: space-between; gap: 8px; font-size: 13px; color: var(--d-soft);"><span style="display: flex; align-items: center; gap: 8px;"><svg style="color: var(--d-accent);" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 9L12 4 2 9l10 5 10-5z"></path><path d="M6 11.2V16c0 1.6 2.7 3 6 3s6-1.4 6-3v-4.8"></path></svg>Formation complète</span><span style="color: var(--d-accent); letter-spacing: 1px;" aria-hidden="true">★★★★★</span></div>
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 8px; font-size: 13px; color: var(--d-soft);"><span style="display: flex; align-items: center; gap: 8px;"><svg style="color: var(--d-accent);" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 9L12 4 2 9l10 5 10-5z"></path><path d="M6 11.2V16c0 1.6 2.7 3 6 3s6-1.4 6-3v-4.8"></path></svg>Formation complète</span></div>
 <div style="display: flex; align-items: baseline; gap: 8px; margin: 10px 0 2px;"><span style="font-family: Archivo, Inter, sans-serif; font-size: 40px; font-weight: 600; line-height: 1.1; color: var(--d-ink);">900</span><span style="font-size: 18px; font-weight: 600; color: var(--d-ink);">DH</span></div>
-<div style="font-size: 14px; color: var(--d-soft);">Paiement unique · accès dès le paiement</div>
-<ul style="list-style: none; margin: 18px 0 20px; padding: 16px 0 0; border-top: 1px solid var(--d-line); display: flex; flex-direction: column; gap: 9px;">
-<li style="display: flex; gap: 10px; align-items: flex-start; font-size: 14px;"><svg style="flex: none; margin-top: 3px; color: var(--d-accent);" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg><span>9 modules · <span style="background: var(--d-ph-bg); color: var(--d-ph-ink); border-radius: 4px; padding: 0 4px;">[X] h</span> de vidéo</span></li>
-<li style="display: flex; gap: 10px; align-items: flex-start; font-size: 14px;"><svg style="flex: none; margin-top: 3px; color: var(--d-accent);" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>La Skillerie Club (WhatsApp) + réponse d'un expert</li>
-<li style="display: flex; gap: 10px; align-items: flex-start; font-size: 14px;"><svg style="flex: none; margin-top: 3px; color: var(--d-accent);" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>Templates, prompts IA, pubs commentées</li>
-<li style="display: flex; gap: 10px; align-items: flex-start; font-size: 14px;"><svg style="flex: none; margin-top: 3px; color: var(--d-accent);" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>Accès à vie et attestation de fin de formation</li>
-</ul>
+<div style="font-size: 14px; color: var(--d-soft); margin-bottom: 16px;">Paiement unique · accès à vie</div>
 <a href="inscription.html" class="mk-btn" style="display: flex; align-items: center; justify-content: center; gap: 10px; background: var(--accent); color: var(--on-accent); font-weight: 600; font-size: 16px; padding: 16px 20px; border-radius: 12px; text-decoration: none; min-height: 52px; box-sizing: border-box;">Démarrer la formation</a>
-<div style="font-size: 12px; color: var(--d-soft); text-align: center; margin-top: 10px;">Paiement sécurisé · <span style="background: var(--d-ph-bg); color: var(--d-ph-ink); border-radius: 4px; padding: 0 4px;">[moyen de paiement]</span></div>
-<figure style="margin: 18px 0 0; padding-top: 16px; border-top: 1px solid var(--d-line);">
-<blockquote style="margin: 0 0 6px; font-size: 14px; line-height: 1.5; color: var(--d-text);"><span style="background: var(--d-ph-bg); color: var(--d-ph-ink); border-radius: 4px; padding: 0 4px;">[Avis court d'un élève, affiché au moment de l'achat]</span></blockquote>
-<figcaption style="font-size: 12px; color: var(--d-soft);">[Prénom N.] · [activité]</figcaption>
-</figure>
 </div>
 <a href="#hesitez" style="display: flex; justify-content: center; align-items: center; gap: 8px; margin-top: 14px; font-size: 14px; font-weight: 500; color: var(--ink); min-height: 44px;">Une question ? Parlons-en en 1 to 1</a>
 </aside>
