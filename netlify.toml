@@ -1,0 +1,26 @@
+# Site statique : aucune commande de build, Netlify publie le dossier public/.
+[build]
+  publish = "public"
+
+# En-têtes de sécurité sur toutes les pages
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+# Images : gardées 7 jours en cache par le navigateur.
+# Pour remplacer une image, donnez un nouveau nom au fichier (ex. photo-v2.webp) et mettez à jour index.html.
+[[headers]]
+  for = "/assets/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+# Avant le lancement, tant que les cases roses (témoignages, liens à compléter) sont visibles :
+# décommentez les 4 lignes ci-dessous pour que Google n'indexe pas encore le site.
+# [[headers]]
+#   for = "/*"
+#   [headers.values]
+#     X-Robots-Tag = "noindex"
