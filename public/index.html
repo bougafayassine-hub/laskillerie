@@ -106,7 +106,7 @@ a{transition:transform .18s ease,box-shadow .18s ease,background-color .18s ease
 .mk-nav a:hover{background:var(--d-card)}
 a:focus-visible,summary:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:2px;box-shadow:0 0 0 2px var(--d-bg)}
 @keyframes mkscroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-.mk-track{animation:mkscroll 70s linear infinite}
+.mk-track{animation:mkscroll 56s linear infinite}
 .mk-track:hover{animation-play-state:paused}
 @keyframes mkrise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
 .mk-rise{animation:mkrise .7s cubic-bezier(.2,.7,.2,1) both}
@@ -131,6 +131,15 @@ body{background:#FBF8F3}
 @media (max-width: 480px){.mk-root{--gx:16px}}
 @media (min-width: 1101px) and (max-width: 1240px){.mk-fc{right:-12px !important}}
 #mk-pv[hidden]{display:none}
+/* Avis qui défilent sous le hero : cartes compactes */
+.mk-tq{margin:0 12px 0 0;width:min(260px,74vw);flex:none;box-sizing:border-box;display:flex;flex-direction:column;gap:8px;padding:12px 14px;border-radius:12px;background:var(--d-card);border:1px solid var(--d-line2)}
+.mk-tq figcaption{display:flex;align-items:center;gap:8px;min-width:0}
+.mk-tq-av{flex:none;width:26px;height:26px;border-radius:50%;background:var(--d-line2)}
+.mk-tq-who{display:flex;flex-direction:column;min-width:0;line-height:1.25}
+.mk-tq-who b{font-size:13px;font-weight:600;color:var(--d-ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mk-tq-who span{font-size:11px;color:var(--d-soft);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mk-tq-st{margin-left:auto;flex:none;font-size:11px;letter-spacing:1px;color:var(--d-accent)}
+.mk-tq blockquote{margin:0;font-size:13px;line-height:1.45;color:var(--d-text);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 </style>
 </head>
 <body>
@@ -160,7 +169,7 @@ Offre de lancement : <strong style="font-weight: 700;">-10 % pour les 10 premiè
 <a href="#blog" style="color: var(--d-text); text-decoration: none; font-size: 14px; font-weight: 500; padding: 8px 12px; border-radius: 999px; white-space: nowrap;">Blog</a>
 </div>
 </nav>
-<a href="#prix" class="mk-btn" style="flex: none; margin-left: auto; background: var(--accent); color: var(--on-accent); text-decoration: none; font-weight: 600; font-size: 14px; padding: 9px 16px; border-radius: 10px; white-space: nowrap;">Démarrer</a>
+<a href="inscription.html" class="mk-btn" style="flex: none; margin-left: auto; background: var(--accent); color: var(--on-accent); text-decoration: none; font-weight: 600; font-size: 14px; padding: 9px 16px; border-radius: 10px; white-space: nowrap;">Démarrer</a>
 </div>
 </header>
 
@@ -173,7 +182,7 @@ Offre de lancement : <strong style="font-weight: 700;">-10 % pour les 10 premiè
 <div class="mk-rise" style="flex: 1 1 520px; min-width: 0;">
 <h1 style="display: inline-block; margin: 0 0 14px; padding: 7px 14px; border: 1px solid color-mix(in srgb, var(--d-accent) 30%, transparent); border-radius: 10px; background: color-mix(in srgb, var(--d-accent) 7%, transparent); font-size: clamp(13px, 1.05vw, 15px); font-weight: 600; line-height: 1.4; letter-spacing: 0; color: var(--d-accent);">Formation Meta Ads (publicités Facebook &amp; Instagram) pour le Maroc et l'international</h1>
 <p style="margin: 0 0 12px; font-family: Archivo, Inter, sans-serif; font-weight: 800; font-size: clamp(30px, 3.6vw, 46px); line-height: 1.1; letter-spacing: -0.02em; color: var(--d-ink); text-wrap: balance;">Des pubs qui vendent, <span style="color: var(--d-accent); font-family: Newsreader, Georgia, serif; font-style: italic; font-weight: 500; font-size: 1.08em; letter-spacing: -0.01em;">pas juste des clics.</span></p>
-<p style="margin: 0; font-size: clamp(16px, 1.3vw, 18px); line-height: 1.55; color: var(--d-text); max-width: 560px;">Ici, on ne vous impose ni jour, ni heure, ni créneau : vous vous formez quand vous voulez et vous gérez votre temps. Vous apprenez à lancer des pubs Facebook et Instagram rentables, et tout ce qu'il faut autour pour qu'elles vendent.</p>
+<p style="margin: 0; font-size: clamp(16px, 1.3vw, 18px); line-height: 1.55; color: var(--d-text); max-width: 560px;"><strong style="font-weight: 600; color: var(--d-ink);">Fini les cours en visio à heure fixe et les replays à rattraper.</strong> Ici, tout est en vidéo : vous apprenez à lancer des pubs Facebook et Instagram rentables quand vous voulez, sans bloquer vos soirées.</p>
 
 <div style="margin-top: 16px;">
 <a href="#avis" aria-label="Note de 4,9 sur 5 sur Trustpilot, voir les avis" style="display: inline-flex; align-items: center; gap: 10px; padding: 6px 14px 6px 6px; border: 1px solid var(--d-line2); border-radius: 999px; background: var(--d-card); font-size: 13px; color: var(--d-text); text-decoration: none; min-height: 36px; box-sizing: border-box;"><span style="display: inline-flex; align-items: center; justify-content: center; height: 24px; padding: 0 8px; border-radius: 999px; background: var(--d-ph-bg); color: var(--d-ph-ink); font-size: 11px; font-weight: 600;">[Logo Trustpilot]</span><span style="color: var(--d-accent); letter-spacing: 1px; font-size: 14px;" aria-hidden="true">★★★★★</span><span><strong style="color: var(--d-ink); font-weight: 600;">4,9/5</strong></span></a>
@@ -185,7 +194,7 @@ Offre de lancement : <strong style="font-weight: 700;">-10 % pour les 10 premiè
 </div>
 
 <div class="mk-ctas" style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center;">
-<a href="#prix" class="mk-btn" style="display: inline-flex; align-items: center; gap: 10px; background: var(--accent); color: var(--on-accent); font-weight: 600; font-size: 16px; padding: 16px 26px; border-radius: 12px; text-decoration: none; min-height: 52px; box-sizing: border-box;">Démarrer la formation</a>
+<a href="inscription.html" class="mk-btn" style="display: inline-flex; align-items: center; gap: 10px; background: var(--accent); color: var(--on-accent); font-weight: 600; font-size: 16px; padding: 16px 26px; border-radius: 12px; text-decoration: none; min-height: 52px; box-sizing: border-box;">Démarrer la formation</a>
 <a href="#programme" class="mk-btn" style="display: inline-flex; align-items: center; gap: 10px; background: var(--d-card); border: 1px solid var(--d-line3); color: var(--d-ink); font-weight: 600; font-size: 16px; padding: 16px 24px; border-radius: 12px; text-decoration: none; min-height: 52px; box-sizing: border-box;">Voir le programme</a>
 </div>
 
@@ -196,7 +205,7 @@ Offre de lancement : <strong style="font-weight: 700;">-10 % pour les 10 premiè
 <div style="border-radius: 24px; background: var(--d-card); border: 1px solid var(--d-line2); box-shadow: var(--h-shadow); overflow: hidden;">
 <div style="display: flex; align-items: center; gap: 12px; padding: 12px 16px; border-bottom: 1px solid var(--d-line2);">
 <span aria-hidden="true" style="display: flex; gap: 6px; flex: none;"><span style="width: 10px; height: 10px; border-radius: 50%; background: var(--d-line3);"></span><span style="width: 10px; height: 10px; border-radius: 50%; background: var(--d-line3);"></span><span style="width: 10px; height: 10px; border-radius: 50%; background: var(--d-line3);"></span></span>
-<span style="min-width: 0; font-size: 12px; color: var(--d-soft); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Vidéo de présentation · Yassine &amp; Nada</span>
+<span style="min-width: 0; font-size: 12px; color: var(--d-soft); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Vidéo de présentation · Yassine</span>
 </div>
 <div style="position: relative; aspect-ratio: 16 / 10; padding: 18px; box-sizing: border-box; background: var(--d-bg2);">
 <div aria-hidden="true" style="display: flex; gap: 8px; margin-bottom: 14px;"><span style="height: 24px; width: 26%; border-radius: 7px; background: var(--accent);"></span><span style="height: 24px; width: 18%; border-radius: 7px; background: var(--d-line);"></span><span style="height: 24px; width: 18%; border-radius: 7px; background: var(--d-line);"></span><span style="height: 24px; width: 24px; margin-left: auto; border-radius: 7px; background: var(--d-line);"></span></div>
@@ -224,84 +233,72 @@ Offre de lancement : <strong style="font-weight: 700;">-10 % pour les 10 premiè
 </div>
 
 <!-- TÉMOIGNAGES QUI DÉFILENT -->
-<div style="margin-top: 28px; padding-bottom: 40px;">
-<div style="max-width: 1200px; margin: 0 auto 18px; padding: 0 var(--gx); box-sizing: border-box; display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap;">
+<div style="margin-top: 24px; padding-bottom: 32px;">
+<div style="max-width: 1200px; margin: 0 auto 12px; padding: 0 var(--gx); box-sizing: border-box; display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap;">
 <div style="font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--d-soft);">Ce qu'en disent les élèves</div>
 <a href="#avis" style="color: var(--d-text); font-size: 14px; font-weight: 500;">Tous les avis</a>
 </div>
 <div style="overflow: hidden;">
 <div class="mk-track" style="display: flex; width: max-content; padding-left: var(--gx);">
 
-<figure style="margin: 0 16px 0 0; width: min(320px, 80vw); flex: none; background: var(--d-card); border: 1px solid var(--d-line2); border-radius: 16px; padding: 18px 20px; box-sizing: border-box; display: flex; flex-direction: column; gap: 10px;">
-<div style="color: var(--d-accent); letter-spacing: 2px;" aria-hidden="true">★★★★★</div>
-<blockquote style="margin: 0; font-size: 15px; line-height: 1.55; color: var(--d-text);"><span style="background: var(--d-ph-bg); color: var(--d-ph-ink); border-radius: 4px; padding: 0 4px;">[Ce qui a changé dans ses campagnes après la formation]</span></blockquote>
-<figcaption style="display: flex; align-items: center; gap: 10px; margin-top: auto;"><span style="width: 36px; height: 36px; border-radius: 50%; background: var(--d-line2); flex: none;"></span><span style="display: flex; flex-direction: column; line-height: 1.3;"><span style="font-weight: 600; font-size: 14px; color: var(--d-ink);">[Prénom N.]</span><span style="font-size: 12px; color: var(--d-soft);">[Activité · ville]</span></span></figcaption>
+<figure class="mk-tq">
+<figcaption><span class="mk-tq-av"></span><span class="mk-tq-who"><b>[Prénom N.]</b><span>[Activité · ville]</span></span><span class="mk-tq-st" aria-hidden="true">★★★★★</span></figcaption>
+<blockquote><span style="background: var(--d-ph-bg); color: var(--d-ph-ink); border-radius: 4px; padding: 0 4px;">[Ce qui a changé dans ses campagnes après la formation]</span></blockquote>
 </figure>
 
-<figure style="margin: 0 16px 0 0; width: min(320px, 80vw); flex: none; background: var(--d-card); border: 1px solid var(--d-line2); border-radius: 16px; padding: 18px 20px; box-sizing: border-box; display: flex; flex-direction: column; gap: 10px;">
-<div style="color: var(--d-accent); letter-spacing: 2px;" aria-hidden="true">★★★★★</div>
-<blockquote style="margin: 0; font-size: 15px; line-height: 1.55; color: var(--d-text);"><span style="background: var(--d-ph-bg); color: var(--d-ph-ink); border-radius: 4px; padding: 0 4px;">[Le module ou la vidéo où tout a « cliqué »]</span></blockquote>
-<figcaption style="display: flex; align-items: center; gap: 10px; margin-top: auto;"><span style="width: 36px; height: 36px; border-radius: 50%; background: var(--d-line2); flex: none;"></span><span style="display: flex; flex-direction: column; line-height: 1.3;"><span style="font-weight: 600; font-size: 14px; color: var(--d-ink);">[Prénom N.]</span><span style="font-size: 12px; color: var(--d-soft);">[Activité · ville]</span></span></figcaption>
+<figure class="mk-tq">
+<figcaption><span class="mk-tq-av"></span><span class="mk-tq-who"><b>[Prénom N.]</b><span>[Activité · ville]</span></span><span class="mk-tq-st" aria-hidden="true">★★★★★</span></figcaption>
+<blockquote><span style="background: var(--d-ph-bg); color: var(--d-ph-ink); border-radius: 4px; padding: 0 4px;">[Le module ou la vidéo où tout a « cliqué »]</span></blockquote>
 </figure>
 
-<figure style="margin: 0 16px 0 0; width: min(320px, 80vw); flex: none; background: var(--d-card); border: 1px solid var(--d-line2); border-radius: 16px; padding: 18px 20px; box-sizing: border-box; display: flex; flex-direction: column; gap: 10px;">
-<div style="color: var(--d-accent); letter-spacing: 2px;" aria-hidden="true">★★★★★</div>
-<blockquote style="margin: 0; font-size: 15px; line-height: 1.55; color: var(--d-text);"><span style="background: var(--d-ph-bg); color: var(--d-ph-ink); border-radius: 4px; padding: 0 4px;">[Un résultat réel, avec son accord : coût par message, commandes confirmées…]</span></blockquote>
-<figcaption style="display: flex; align-items: center; gap: 10px; margin-top: auto;"><span style="width: 36px; height: 36px; border-radius: 50%; background: var(--d-line2); flex: none;"></span><span style="display: flex; flex-direction: column; line-height: 1.3;"><span style="font-weight: 600; font-size: 14px; color: var(--d-ink);">[Prénom N.]</span><span style="font-size: 12px; color: var(--d-soft);">[Activité · ville]</span></span></figcaption>
+<figure class="mk-tq">
+<figcaption><span class="mk-tq-av"></span><span class="mk-tq-who"><b>[Prénom N.]</b><span>[Activité · ville]</span></span><span class="mk-tq-st" aria-hidden="true">★★★★★</span></figcaption>
+<blockquote><span style="background: var(--d-ph-bg); color: var(--d-ph-ink); border-radius: 4px; padding: 0 4px;">[Un résultat réel, avec son accord : coût par message, commandes confirmées…]</span></blockquote>
 </figure>
 
-<figure style="margin: 0 16px 0 0; width: min(320px, 80vw); flex: none; background: var(--d-card); border: 1px solid var(--d-line2); border-radius: 16px; padding: 18px 20px; box-sizing: border-box; display: flex; flex-direction: column; gap: 10px;">
-<div style="color: var(--d-accent); letter-spacing: 2px;" aria-hidden="true">★★★★★</div>
-<blockquote style="margin: 0; font-size: 15px; line-height: 1.55; color: var(--d-text);"><span style="background: var(--d-ph-bg); color: var(--d-ph-ink); border-radius: 4px; padding: 0 4px;">[Pourquoi le format vidéo, à son rythme, lui a convenu]</span></blockquote>
-<figcaption style="display: flex; align-items: center; gap: 10px; margin-top: auto;"><span style="width: 36px; height: 36px; border-radius: 50%; background: var(--d-line2); flex: none;"></span><span style="display: flex; flex-direction: column; line-height: 1.3;"><span style="font-weight: 600; font-size: 14px; color: var(--d-ink);">[Prénom N.]</span><span style="font-size: 12px; color: var(--d-soft);">[Activité · ville]</span></span></figcaption>
+<figure class="mk-tq">
+<figcaption><span class="mk-tq-av"></span><span class="mk-tq-who"><b>[Prénom N.]</b><span>[Activité · ville]</span></span><span class="mk-tq-st" aria-hidden="true">★★★★★</span></figcaption>
+<blockquote><span style="background: var(--d-ph-bg); color: var(--d-ph-ink); border-radius: 4px; padding: 0 4px;">[Pourquoi le format vidéo, à son rythme, lui a convenu]</span></blockquote>
 </figure>
 
-<figure style="margin: 0 16px 0 0; width: min(320px, 80vw); flex: none; background: var(--d-card); border: 1px solid var(--d-line2); border-radius: 16px; padding: 18px 20px; box-sizing: border-box; display: flex; flex-direction: column; gap: 10px;">
-<div style="color: var(--d-accent); letter-spacing: 2px;" aria-hidden="true">★★★★★</div>
-<blockquote style="margin: 0; font-size: 15px; line-height: 1.55; color: var(--d-text);"><span style="background: var(--d-ph-bg); color: var(--d-ph-ink); border-radius: 4px; padding: 0 4px;">[Ce que la communauté ou l'expert lui a apporté]</span></blockquote>
-<figcaption style="display: flex; align-items: center; gap: 10px; margin-top: auto;"><span style="width: 36px; height: 36px; border-radius: 50%; background: var(--d-line2); flex: none;"></span><span style="display: flex; flex-direction: column; line-height: 1.3;"><span style="font-weight: 600; font-size: 14px; color: var(--d-ink);">[Prénom N.]</span><span style="font-size: 12px; color: var(--d-soft);">[Activité · ville]</span></span></figcaption>
+<figure class="mk-tq">
+<figcaption><span class="mk-tq-av"></span><span class="mk-tq-who"><b>[Prénom N.]</b><span>[Activité · ville]</span></span><span class="mk-tq-st" aria-hidden="true">★★★★★</span></figcaption>
+<blockquote><span style="background: var(--d-ph-bg); color: var(--d-ph-ink); border-radius: 4px; padding: 0 4px;">[Ce que la communauté ou l'expert lui a apporté]</span></blockquote>
 </figure>
 
-<figure style="margin: 0 16px 0 0; width: min(320px, 80vw); flex: none; background: var(--d-card); border: 1px solid var(--d-line2); border-radius: 16px; padding: 18px 20px; box-sizing: border-box; display: flex; flex-direction: column; gap: 10px;">
-<div style="color: var(--d-accent); letter-spacing: 2px;" aria-hidden="true">★★★★★</div>
-<blockquote style="margin: 0; font-size: 15px; line-height: 1.55; color: var(--d-text);"><span style="background: var(--d-ph-bg); color: var(--d-ph-ink); border-radius: 4px; padding: 0 4px;">[Ce qu'il ou elle dirait à quelqu'un qui hésite]</span></blockquote>
-<figcaption style="display: flex; align-items: center; gap: 10px; margin-top: auto;"><span style="width: 36px; height: 36px; border-radius: 50%; background: var(--d-line2); flex: none;"></span><span style="display: flex; flex-direction: column; line-height: 1.3;"><span style="font-weight: 600; font-size: 14px; color: var(--d-ink);">[Prénom N.]</span><span style="font-size: 12px; color: var(--d-soft);">[Activité · ville]</span></span></figcaption>
+<figure class="mk-tq">
+<figcaption><span class="mk-tq-av"></span><span class="mk-tq-who"><b>[Prénom N.]</b><span>[Activité · ville]</span></span><span class="mk-tq-st" aria-hidden="true">★★★★★</span></figcaption>
+<blockquote><span style="background: var(--d-ph-bg); color: var(--d-ph-ink); border-radius: 4px; padding: 0 4px;">[Ce qu'il ou elle dirait à quelqu'un qui hésite]</span></blockquote>
 </figure>
 
-<figure aria-hidden="true" style="margin: 0 16px 0 0; width: min(320px, 80vw); flex: none; background: var(--d-card); border: 1px solid var(--d-line2); border-radius: 16px; padding: 18px 20px; box-sizing: border-box; display: flex; flex-direction: column; gap: 10px;">
-<div style="color: var(--d-accent); letter-spacing: 2px;">★★★★★</div>
-<blockquote style="margin: 0; font-size: 15px; line-height: 1.55; color: var(--d-text);"><span style="background: var(--d-ph-bg); color: var(--d-ph-ink); border-radius: 4px; padding: 0 4px;">[Ce qui a changé dans ses campagnes après la formation]</span></blockquote>
-<figcaption style="display: flex; align-items: center; gap: 10px; margin-top: auto;"><span style="width: 36px; height: 36px; border-radius: 50%; background: var(--d-line2); flex: none;"></span><span style="display: flex; flex-direction: column; line-height: 1.3;"><span style="font-weight: 600; font-size: 14px; color: var(--d-ink);">[Prénom N.]</span><span style="font-size: 12px; color: var(--d-soft);">[Activité · ville]</span></span></figcaption>
+<figure class="mk-tq" aria-hidden="true">
+<figcaption><span class="mk-tq-av"></span><span class="mk-tq-who"><b>[Prénom N.]</b><span>[Activité · ville]</span></span><span class="mk-tq-st" aria-hidden="true">★★★★★</span></figcaption>
+<blockquote><span style="background: var(--d-ph-bg); color: var(--d-ph-ink); border-radius: 4px; padding: 0 4px;">[Ce qui a changé dans ses campagnes après la formation]</span></blockquote>
 </figure>
 
-<figure aria-hidden="true" style="margin: 0 16px 0 0; width: min(320px, 80vw); flex: none; background: var(--d-card); border: 1px solid var(--d-line2); border-radius: 16px; padding: 18px 20px; box-sizing: border-box; display: flex; flex-direction: column; gap: 10px;">
-<div style="color: var(--d-accent); letter-spacing: 2px;">★★★★★</div>
-<blockquote style="margin: 0; font-size: 15px; line-height: 1.55; color: var(--d-text);"><span style="background: var(--d-ph-bg); color: var(--d-ph-ink); border-radius: 4px; padding: 0 4px;">[Le module ou la vidéo où tout a « cliqué »]</span></blockquote>
-<figcaption style="display: flex; align-items: center; gap: 10px; margin-top: auto;"><span style="width: 36px; height: 36px; border-radius: 50%; background: var(--d-line2); flex: none;"></span><span style="display: flex; flex-direction: column; line-height: 1.3;"><span style="font-weight: 600; font-size: 14px; color: var(--d-ink);">[Prénom N.]</span><span style="font-size: 12px; color: var(--d-soft);">[Activité · ville]</span></span></figcaption>
+<figure class="mk-tq" aria-hidden="true">
+<figcaption><span class="mk-tq-av"></span><span class="mk-tq-who"><b>[Prénom N.]</b><span>[Activité · ville]</span></span><span class="mk-tq-st" aria-hidden="true">★★★★★</span></figcaption>
+<blockquote><span style="background: var(--d-ph-bg); color: var(--d-ph-ink); border-radius: 4px; padding: 0 4px;">[Le module ou la vidéo où tout a « cliqué »]</span></blockquote>
 </figure>
 
-<figure aria-hidden="true" style="margin: 0 16px 0 0; width: min(320px, 80vw); flex: none; background: var(--d-card); border: 1px solid var(--d-line2); border-radius: 16px; padding: 18px 20px; box-sizing: border-box; display: flex; flex-direction: column; gap: 10px;">
-<div style="color: var(--d-accent); letter-spacing: 2px;">★★★★★</div>
-<blockquote style="margin: 0; font-size: 15px; line-height: 1.55; color: var(--d-text);"><span style="background: var(--d-ph-bg); color: var(--d-ph-ink); border-radius: 4px; padding: 0 4px;">[Un résultat réel, avec son accord : coût par message, commandes confirmées…]</span></blockquote>
-<figcaption style="display: flex; align-items: center; gap: 10px; margin-top: auto;"><span style="width: 36px; height: 36px; border-radius: 50%; background: var(--d-line2); flex: none;"></span><span style="display: flex; flex-direction: column; line-height: 1.3;"><span style="font-weight: 600; font-size: 14px; color: var(--d-ink);">[Prénom N.]</span><span style="font-size: 12px; color: var(--d-soft);">[Activité · ville]</span></span></figcaption>
+<figure class="mk-tq" aria-hidden="true">
+<figcaption><span class="mk-tq-av"></span><span class="mk-tq-who"><b>[Prénom N.]</b><span>[Activité · ville]</span></span><span class="mk-tq-st" aria-hidden="true">★★★★★</span></figcaption>
+<blockquote><span style="background: var(--d-ph-bg); color: var(--d-ph-ink); border-radius: 4px; padding: 0 4px;">[Un résultat réel, avec son accord : coût par message, commandes confirmées…]</span></blockquote>
 </figure>
 
-<figure aria-hidden="true" style="margin: 0 16px 0 0; width: min(320px, 80vw); flex: none; background: var(--d-card); border: 1px solid var(--d-line2); border-radius: 16px; padding: 18px 20px; box-sizing: border-box; display: flex; flex-direction: column; gap: 10px;">
-<div style="color: var(--d-accent); letter-spacing: 2px;">★★★★★</div>
-<blockquote style="margin: 0; font-size: 15px; line-height: 1.55; color: var(--d-text);"><span style="background: var(--d-ph-bg); color: var(--d-ph-ink); border-radius: 4px; padding: 0 4px;">[Pourquoi le format vidéo, à son rythme, lui a convenu]</span></blockquote>
-<figcaption style="display: flex; align-items: center; gap: 10px; margin-top: auto;"><span style="width: 36px; height: 36px; border-radius: 50%; background: var(--d-line2); flex: none;"></span><span style="display: flex; flex-direction: column; line-height: 1.3;"><span style="font-weight: 600; font-size: 14px; color: var(--d-ink);">[Prénom N.]</span><span style="font-size: 12px; color: var(--d-soft);">[Activité · ville]</span></span></figcaption>
+<figure class="mk-tq" aria-hidden="true">
+<figcaption><span class="mk-tq-av"></span><span class="mk-tq-who"><b>[Prénom N.]</b><span>[Activité · ville]</span></span><span class="mk-tq-st" aria-hidden="true">★★★★★</span></figcaption>
+<blockquote><span style="background: var(--d-ph-bg); color: var(--d-ph-ink); border-radius: 4px; padding: 0 4px;">[Pourquoi le format vidéo, à son rythme, lui a convenu]</span></blockquote>
 </figure>
 
-<figure aria-hidden="true" style="margin: 0 16px 0 0; width: min(320px, 80vw); flex: none; background: var(--d-card); border: 1px solid var(--d-line2); border-radius: 16px; padding: 18px 20px; box-sizing: border-box; display: flex; flex-direction: column; gap: 10px;">
-<div style="color: var(--d-accent); letter-spacing: 2px;">★★★★★</div>
-<blockquote style="margin: 0; font-size: 15px; line-height: 1.55; color: var(--d-text);"><span style="background: var(--d-ph-bg); color: var(--d-ph-ink); border-radius: 4px; padding: 0 4px;">[Ce que la communauté ou l'expert lui a apporté]</span></blockquote>
-<figcaption style="display: flex; align-items: center; gap: 10px; margin-top: auto;"><span style="width: 36px; height: 36px; border-radius: 50%; background: var(--d-line2); flex: none;"></span><span style="display: flex; flex-direction: column; line-height: 1.3;"><span style="font-weight: 600; font-size: 14px; color: var(--d-ink);">[Prénom N.]</span><span style="font-size: 12px; color: var(--d-soft);">[Activité · ville]</span></span></figcaption>
+<figure class="mk-tq" aria-hidden="true">
+<figcaption><span class="mk-tq-av"></span><span class="mk-tq-who"><b>[Prénom N.]</b><span>[Activité · ville]</span></span><span class="mk-tq-st" aria-hidden="true">★★★★★</span></figcaption>
+<blockquote><span style="background: var(--d-ph-bg); color: var(--d-ph-ink); border-radius: 4px; padding: 0 4px;">[Ce que la communauté ou l'expert lui a apporté]</span></blockquote>
 </figure>
 
-<figure aria-hidden="true" style="margin: 0 16px 0 0; width: min(320px, 80vw); flex: none; background: var(--d-card); border: 1px solid var(--d-line2); border-radius: 16px; padding: 18px 20px; box-sizing: border-box; display: flex; flex-direction: column; gap: 10px;">
-<div style="color: var(--d-accent); letter-spacing: 2px;">★★★★★</div>
-<blockquote style="margin: 0; font-size: 15px; line-height: 1.55; color: var(--d-text);"><span style="background: var(--d-ph-bg); color: var(--d-ph-ink); border-radius: 4px; padding: 0 4px;">[Ce qu'il ou elle dirait à quelqu'un qui hésite]</span></blockquote>
-<figcaption style="display: flex; align-items: center; gap: 10px; margin-top: auto;"><span style="width: 36px; height: 36px; border-radius: 50%; background: var(--d-line2); flex: none;"></span><span style="display: flex; flex-direction: column; line-height: 1.3;"><span style="font-weight: 600; font-size: 14px; color: var(--d-ink);">[Prénom N.]</span><span style="font-size: 12px; color: var(--d-soft);">[Activité · ville]</span></span></figcaption>
+<figure class="mk-tq" aria-hidden="true">
+<figcaption><span class="mk-tq-av"></span><span class="mk-tq-who"><b>[Prénom N.]</b><span>[Activité · ville]</span></span><span class="mk-tq-st" aria-hidden="true">★★★★★</span></figcaption>
+<blockquote><span style="background: var(--d-ph-bg); color: var(--d-ph-ink); border-radius: 4px; padding: 0 4px;">[Ce qu'il ou elle dirait à quelqu'un qui hésite]</span></blockquote>
 </figure>
 
 </div>
@@ -699,9 +696,9 @@ Offre de lancement : <strong style="font-weight: 700;">-10 % pour les 10 premiè
 <li style="display: flex; gap: 10px; align-items: flex-start; font-size: 14px;"><svg style="flex: none; margin-top: 3px; color: var(--d-accent);" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg><span>9 modules · <span style="background: var(--d-ph-bg); color: var(--d-ph-ink); border-radius: 4px; padding: 0 4px;">[X] h</span> de vidéo</span></li>
 <li style="display: flex; gap: 10px; align-items: flex-start; font-size: 14px;"><svg style="flex: none; margin-top: 3px; color: var(--d-accent);" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>Communauté + réponse d'un expert</li>
 <li style="display: flex; gap: 10px; align-items: flex-start; font-size: 14px;"><svg style="flex: none; margin-top: 3px; color: var(--d-accent);" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>Templates, prompts IA, pubs commentées</li>
-<li style="display: flex; gap: 10px; align-items: flex-start; font-size: 14px;"><svg style="flex: none; margin-top: 3px; color: var(--d-accent);" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>Mises à jour gratuites et attestation</li>
+<li style="display: flex; gap: 10px; align-items: flex-start; font-size: 14px;"><svg style="flex: none; margin-top: 3px; color: var(--d-accent);" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>Accès à vie et attestation de fin de formation</li>
 </ul>
-<a href="#prix" class="mk-btn" style="display: flex; align-items: center; justify-content: center; gap: 10px; background: var(--accent); color: var(--on-accent); font-weight: 600; font-size: 16px; padding: 16px 20px; border-radius: 12px; text-decoration: none; min-height: 52px; box-sizing: border-box;">Démarrer la formation</a>
+<a href="inscription.html" class="mk-btn" style="display: flex; align-items: center; justify-content: center; gap: 10px; background: var(--accent); color: var(--on-accent); font-weight: 600; font-size: 16px; padding: 16px 20px; border-radius: 12px; text-decoration: none; min-height: 52px; box-sizing: border-box;">Démarrer la formation</a>
 <div style="font-size: 12px; color: var(--d-soft); text-align: center; margin-top: 10px;">Paiement sécurisé · <span style="background: var(--d-ph-bg); color: var(--d-ph-ink); border-radius: 4px; padding: 0 4px;">[moyen de paiement]</span></div>
 <figure style="margin: 18px 0 0; padding-top: 16px; border-top: 1px solid var(--d-line);">
 <blockquote style="margin: 0 0 6px; font-size: 14px; line-height: 1.5; color: var(--d-text);"><span style="background: var(--d-ph-bg); color: var(--d-ph-ink); border-radius: 4px; padding: 0 4px;">[Avis court d'un élève, affiché au moment de l'achat]</span></blockquote>
@@ -870,9 +867,9 @@ Offre de lancement : <strong style="font-weight: 700;">-10 % pour les 10 premiè
 <p style="margin: 0; font-size: 14px; color: var(--text);">De vraies pubs tirées de la Bibliothèque publicitaire de Meta, décortiquées : ce qui marche et ce qui ne marche pas.</p>
 </article>
 <article style="background: var(--surface); border-radius: 16px; padding: 18px 20px;">
-<svg style="margin-bottom: 10px;" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11a8 8 0 00-14.5-4.5L4 8M4 4v4h4M4 13a8 8 0 0014.5 4.5L20 16M20 20v-4h-4"></path></svg>
-<h3 style="margin: 0 0 6px; font-size: 16px; font-weight: 600;">Mises à jour gratuites</h3>
-<p style="margin: 0; font-size: 14px; color: var(--text);">Recevez automatiquement les nouveaux modules et mises à jour sans frais supplémentaires.</p>
+<svg style="margin-bottom: 10px;" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="17" rx="2"></rect><path d="M9 4V3h6v1M9 12.5l2 2 4-4"></path></svg>
+<h3 style="margin: 0 0 6px; font-size: 16px; font-weight: 600;">Un examen final, si vous le souhaitez</h3>
+<p style="margin: 0; font-size: 14px; color: var(--text);">Un quiz facultatif pour vérifier que vous maîtrisez chaque étape avant de lancer vos campagnes.</p>
 </article>
 <article style="background: var(--surface); border-radius: 16px; padding: 18px 20px;">
 <svg style="margin-bottom: 10px;" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5.5"></circle><path d="M8.5 13.5L7 21l5-2.5 5 2.5-1.5-7.5"></path></svg>
@@ -883,7 +880,7 @@ Offre de lancement : <strong style="font-weight: 700;">-10 % pour les 10 premiè
 </div>
 </section>
 
-<!-- ET APRÈS : débouchés + l'agence prend le relais -->
+<!-- ET APRÈS : débouchés (l'encart « site par Y&N Growth » est sur merci.html) -->
 <section id="apres" style="padding: clamp(44px, 5.5vw, 72px) 0; background: var(--bg); scroll-margin-top: 72px;">
 <div style="max-width: 1200px; margin: 0 auto; padding: 0 var(--gx); box-sizing: border-box;">
 <div style="max-width: 760px; margin-bottom: 28px;">
@@ -907,15 +904,6 @@ Offre de lancement : <strong style="font-weight: 700;">-10 % pour les 10 premiè
 <h3 style="margin: 0 0 8px; font-size: 18px; font-weight: 600;">Faire travailler vos pages</h3>
 <p style="margin: 0; font-size: 15px; color: var(--text);">Vous savez corriger la page qui reçoit votre trafic pour qu'elle transforme mieux.</p>
 </div>
-</div>
-
-<div style="margin-top: 32px; background: var(--d-bg); color: var(--d-ink); border-radius: 20px; padding: clamp(20px, 3.2vw, 36px); display: flex; flex-wrap: wrap; gap: 24px 40px; align-items: center; justify-content: space-between;">
-<div style="flex: 1 1 480px; min-width: 0;">
-<div style="font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--d-accent); margin-bottom: 10px;">Votre site, par Y&amp;N Growth</div>
-<h3 style="margin: 0 0 10px; font-family: Archivo, Inter, sans-serif; font-size: clamp(22px, 2.4vw, 28px); font-weight: 600; color: var(--d-ink);">Besoin d'un site qui convertit ?</h3>
-<p style="margin: 0; font-size: 16px; color: var(--d-text);">Vos pubs méritent une page à la hauteur. L'équipe Y&amp;N Growth peut créer votre site ou votre landing page, ou auditer celle que vous avez déjà et vous remettre des recommandations concrètes pour qu'elle transforme mieux.</p>
-</div>
-<a href="#hesitez" class="mk-btn" style="flex: none; display: inline-flex; align-items: center; gap: 10px; background: var(--accent); color: var(--on-accent); font-weight: 600; font-size: 15px; padding: 15px 22px; border-radius: 12px; text-decoration: none; min-height: 48px; box-sizing: border-box;">Parler de mon site</a>
 </div>
 </div>
 </section>
@@ -957,7 +945,7 @@ Offre de lancement : <strong style="font-weight: 700;">-10 % pour les 10 premiè
 
 <div style="display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center; justify-content: center; margin-top: 28px;">
 <a href="#trustpilot" style="font-size: 15px; font-weight: 600; color: var(--ink); min-height: 44px; display: inline-flex; align-items: center;">Lire tous les avis sur Trustpilot</a>
-<a href="#prix" class="mk-btn" style="display: inline-flex; align-items: center; gap: 10px; background: var(--d-bg); color: var(--d-ink); font-weight: 600; font-size: 15px; padding: 14px 22px; border-radius: 12px; text-decoration: none; min-height: 48px; box-sizing: border-box;">Démarrer la formation</a>
+<a href="inscription.html" class="mk-btn" style="display: inline-flex; align-items: center; gap: 10px; background: var(--d-bg); color: var(--d-ink); font-weight: 600; font-size: 15px; padding: 14px 22px; border-radius: 12px; text-decoration: none; min-height: 48px; box-sizing: border-box;">Démarrer la formation</a>
 </div>
 </div>
 </section>
@@ -975,7 +963,7 @@ Offre de lancement : <strong style="font-weight: 700;">-10 % pour les 10 premiè
 <div style="display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--d-soft);"><svg style="color: var(--d-accent);" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 9L12 4 2 9l10 5 10-5z"></path><path d="M6 11.2V16c0 1.6 2.7 3 6 3s6-1.4 6-3v-4.8"></path></svg>La Skillerie · formation Meta Ads complète</div>
 <div style="display: flex; align-items: baseline; gap: 10px; margin-top: 10px;"><span style="font-family: Archivo, Inter, sans-serif; font-size: clamp(48px, 6vw, 64px); font-weight: 600; line-height: 1; color: var(--d-ink);">2&#160;300</span><span style="font-size: 22px; font-weight: 600; color: var(--d-ink);">DH</span></div>
 <div style="font-size: 15px; color: var(--d-soft); margin-bottom: 20px;">Paiement unique · accès dès le paiement</div>
-<a href="#paiement" class="mk-btn" style="display: flex; align-items: center; justify-content: center; gap: 10px; background: var(--accent); color: var(--on-accent); font-weight: 600; font-size: 17px; padding: 17px 20px; border-radius: 12px; text-decoration: none; min-height: 54px; box-sizing: border-box;">Démarrer la formation</a>
+<a href="inscription.html" class="mk-btn" style="display: flex; align-items: center; justify-content: center; gap: 10px; background: var(--accent); color: var(--on-accent); font-weight: 600; font-size: 17px; padding: 17px 20px; border-radius: 12px; text-decoration: none; min-height: 54px; box-sizing: border-box;">Démarrer la formation</a>
 <div style="font-size: 12px; color: var(--d-soft); text-align: center; margin-top: 8px;">Paiement sécurisé · <span style="background: var(--d-ph-bg); color: var(--d-ph-ink); border-radius: 4px; padding: 0 4px;">[moyen de paiement]</span></div>
 <figure style="margin: 18px 0 0; background: var(--d-card); border-radius: 12px; padding: 14px;">
 <div style="color: var(--d-accent); letter-spacing: 2px; font-size: 13px;" aria-hidden="true">★★★★★</div>
@@ -995,11 +983,8 @@ Offre de lancement : <strong style="font-weight: 700;">-10 % pour les 10 premiè
 <li style="display: flex; gap: 10px; align-items: flex-start; font-size: 15px;"><svg style="flex: none; margin-top: 3px;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>Méthode et prompts pour analyser vos campagnes avec Claude</li>
 <li style="display: flex; gap: 10px; align-items: flex-start; font-size: 15px;"><svg style="flex: none; margin-top: 3px;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>Bibliothèque de pubs marocaines et françaises commentées</li>
 <li style="display: flex; gap: 10px; align-items: flex-start; font-size: 15px;"><svg style="flex: none; margin-top: 3px;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>Attestation de fin de formation</li>
+<li style="display: flex; gap: 10px; align-items: flex-start; font-size: 15px;"><svg style="flex: none; margin-top: 3px;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>Mises à jour et nouveaux modules gratuits</li>
 </ul>
-<div style="display: flex; gap: 14px; align-items: flex-start; margin-top: 20px; padding: 12px 14px; border-radius: 12px; background: var(--tint); border: 1px solid var(--line);">
-<span style="flex: none; width: 34px; height: 34px; border-radius: 10px; background: var(--accent); color: var(--on-accent); display: flex; align-items: center; justify-content: center;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11a8 8 0 00-14.5-4.5L4 8M4 4v4h4M4 13a8 8 0 0014.5 4.5L20 16M20 20v-4h-4"></path></svg></span>
-<div style="min-width: 0;"><div style="font-weight: 600; font-size: 16px; color: var(--ink);">Mises à jour gratuites</div><div style="font-size: 14px; color: var(--text); margin-top: 2px;">Recevez automatiquement les nouveaux modules et mises à jour sans frais supplémentaires.</div></div>
-</div>
 <p style="margin: 20px 0 0; padding-top: 16px; border-top: 1px solid var(--line); font-size: 13px; color: var(--muted);">Le budget publicitaire n'est pas inclus : vos pubs sont payées directement à Meta, avec le montant que vous choisissez.</p>
 </div>
 </div>
@@ -1039,7 +1024,7 @@ Offre de lancement : <strong style="font-weight: 700;">-10 % pour les 10 premiè
 <div style="flex: 1 1 460px; min-width: 0;">
 <div style="font-size: 14px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;">Vous hésitez ?</div>
 <h2 style="margin: 8px 0 14px; font-family: Archivo, Inter, sans-serif; font-weight: 800; font-size: clamp(30px, 3.6vw, 48px); line-height: 1.1; letter-spacing: -0.02em; color: var(--on-accent);"><span style="white-space: nowrap;">Parlons-en</span> en 1 to 1.</h2>
-<p style="margin: 0; font-size: 17px; max-width: 560px;">Réservez <span style="background: #FCE7F3; color: #9D174D; border-radius: 4px; padding: 0 4px;">[15 minutes]</span> avec Yassine ou Nada. On regarde votre activité et on vous dit franchement si la formation est faite pour vous.</p>
+<p style="margin: 0; font-size: 17px; max-width: 560px;">Réservez <span style="background: #FCE7F3; color: #9D174D; border-radius: 4px; padding: 0 4px;">[15 minutes]</span> avec Yassine. On regarde votre activité et on vous dit franchement si la formation est faite pour vous.</p>
 </div>
 <div style="flex: 0 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 12px;">
 <a href="#calendly" class="mk-btn" style="display: flex; align-items: center; justify-content: center; gap: 10px; background: var(--d-bg); color: var(--d-ink); font-weight: 600; font-size: 16px; padding: 16px 22px; border-radius: 12px; text-decoration: none; min-height: 54px; box-sizing: border-box;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M3 10h18M8 3v4M16 3v4"></path></svg>Réserver un appel</a>
@@ -1106,7 +1091,7 @@ Offre de lancement : <strong style="font-weight: 700;">-10 % pour les 10 premiè
 <!-- BARRE D'ACHAT MOBILE -->
 <div class="mk-mbar" style="position: fixed; left: 12px; right: 12px; bottom: 12px; z-index: 40; display: flex; align-items: center; justify-content: space-between; gap: 12px; background: var(--d-bg); border: 1px solid var(--d-line2); border-radius: 18px; padding: 10px 10px 10px 16px; box-shadow: 0 16px 40px rgba(0,0,0,.35);">
 <div style="line-height: 1.25;"><div style="font-family: Archivo, Inter, sans-serif; font-size: 17px; font-weight: 600; color: var(--d-ink);">2&#160;300 <span style="font-size: .7em;">DH</span></div><div style="font-size: 12px; color: var(--d-soft);">Paiement unique</div></div>
-<a href="#prix" style="display: inline-flex; align-items: center; background: var(--accent); color: var(--on-accent); font-weight: 600; font-size: 15px; padding: 13px 20px; border-radius: 12px; text-decoration: none; min-height: 46px; box-sizing: border-box;">Démarrer</a>
+<a href="inscription.html" style="display: inline-flex; align-items: center; background: var(--accent); color: var(--on-accent); font-weight: 600; font-size: 15px; padding: 13px 20px; border-radius: 12px; text-decoration: none; min-height: 46px; box-sizing: border-box;">Démarrer</a>
 </div>
 
 </div>

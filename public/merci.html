@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bienvenue | La Skillerie</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#FBF8F3">
+<meta name="color-scheme" content="light">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body>
+
+<header class="top">
+<div class="wrap">
+<a class="brand" href="index.html" aria-label="La Skillerie, page d'accueil"><span class="mono" aria-hidden="true">S</span><span class="word">La Skillerie</span></a>
+</div>
+</header>
+
+<main class="wrap">
+
+<p class="preview" id="m-preview" hidden>Aperçu : le paiement n'est pas encore branché. Après un vrai paiement, l'élève arrive directement sur cette page.</p>
+
+<section class="ok-hero">
+<div class="ok-badge" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></div>
+<h1 id="m-title">Bienvenue dans La Skillerie !</h1>
+<p>Votre inscription est confirmée. Vos accès arrivent par email <span id="m-mail">dans quelques minutes</span>.</p>
+<a class="btn" href="#espace-eleve">Accéder à mon espace élève</a>
+</section>
+
+<section class="next" aria-labelledby="next-title">
+<h2 id="next-title">Vos 3 premières étapes</h2>
+<ol>
+<li><b>1</b><div><h3>Ouvrez l'email d'accès</h3><p>Pas reçu d'ici 15 minutes ? Regardez dans les spams ou l'onglet Promotions.</p></div></li>
+<li><b>2</b><div><h3>Rejoignez la communauté</h3><p>Présentez-vous et posez votre première question : un expert de l'agence vous répond.</p></div></li>
+<li><b>3</b><div><h3>Commencez par le module 00</h3><p>Quelques minutes pour savoir comment suivre la formation et en tirer le maximum.</p></div></li>
+</ol>
+</section>
+
+<!-- Encart déplacé depuis la page de vente : on propose le site une fois l'achat fait. -->
+<section class="yn" aria-labelledby="yn-title">
+<div>
+<p class="yn-k">Votre site, par Y&amp;N Growth</p>
+<h2 id="yn-title">Besoin d'un site qui convertit ?</h2>
+<p>Vos pubs méritent une page à la hauteur. L'équipe Y&amp;N Growth peut créer votre site ou votre landing page, ou auditer celle que vous avez déjà et vous remettre des recommandations concrètes pour qu'elle transforme mieux.</p>
+</div>
+<div class="yn-ctas">
+<a class="btn" href="#whatsapp">Parler de mon site</a>
+<a class="btn btn-line" href="https://yngrowth.com">Découvrir l'agence</a>
+</div>
+</section>
+
+</main>
+
+<footer class="foot">
+<div class="wrap">
+<span>© 2026 Y&amp;N Growth. Tous droits réservés.</span>
+<nav aria-label="Informations légales"><a href="index.html#mentions">Mentions légales</a><a href="index.html#cgv">CGV</a><a href="index.html#confidentialite">Confidentialité</a></nav>
+</div>
+</footer>
+
+<script>
+/* Prénom et email repris de la page d'inscription (même onglet), sinon texte générique. */
+(function () {
+  if (new URLSearchParams(location.search).get("apercu")) document.getElementById("m-preview").hidden = false;
+  var lead = null;
+  try { lead = JSON.parse(sessionStorage.getItem("lsk-lead") || "null"); } catch (e) { lead = null; }
+  if (lead && lead.prenom) document.getElementById("m-title").textContent = "Bienvenue, " + lead.prenom + " !";
+  if (lead && lead.email) document.getElementById("m-mail").textContent = "à " + lead.email + " dans quelques minutes";
+})();
+</script>
+</body>
+</html>

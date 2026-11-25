@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inscription | La Skillerie</title>
+<meta name="description" content="Vos coordonnées pour accéder à la formation Meta Ads de La Skillerie.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#FBF8F3">
+<meta name="color-scheme" content="light">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body>
+
+<header class="top">
+<div class="wrap">
+<a class="brand" href="index.html" aria-label="La Skillerie, retour à la présentation"><span class="mono" aria-hidden="true">S</span><span class="word">La Skillerie</span></a>
+<span class="secure"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2"></rect><path d="M8 10V7a4 4 0 018 0v3"></path></svg>Paiement sécurisé</span>
+</div>
+</header>
+
+<main class="wrap ins">
+<a class="back" href="index.html#prix"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"></path></svg>Retour à la présentation</a>
+
+<ol class="steps" aria-label="Étapes de l'inscription">
+<li class="is-on" aria-current="step"><b>1</b>Vos coordonnées</li>
+<li><b>2</b>Paiement</li>
+<li><b>3</b>Accès<span class="lg">&#160;à la formation</span></li>
+</ol>
+
+<div class="ins-grid">
+
+<section class="card" aria-labelledby="ins-title">
+<h1 id="ins-title">Vos coordonnées</h1>
+<p class="lead">Elles servent à créer votre accès et à vous l'envoyer juste après le paiement.</p>
+
+<!-- Formulaire relevé par Netlify Forms (onglet « Forms » du site Netlify). -->
+<form id="ins-form" name="inscription" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+<input type="hidden" name="form-name" value="inscription">
+<input type="hidden" name="total" value="2300 DH">
+<p hidden><label>Ne pas remplir : <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+
+<div class="row2">
+<div class="field"><label for="f-prenom">Prénom</label><input class="inp" id="f-prenom" name="prenom" autocomplete="given-name" required aria-describedby="e-prenom"><p class="err" id="e-prenom"></p></div>
+<div class="field"><label for="f-nom">Nom</label><input class="inp" id="f-nom" name="nom" autocomplete="family-name" required aria-describedby="e-nom"><p class="err" id="e-nom"></p></div>
+</div>
+
+<div class="field"><label for="f-email">Email</label><input class="inp" id="f-email" name="email" type="email" inputmode="email" autocomplete="email" spellcheck="false" required aria-describedby="h-email e-email"><p class="hint" id="h-email">Vos accès arrivent à cette adresse.</p><p class="err" id="e-email"></p></div>
+
+<div class="field"><label for="f-tel">Téléphone WhatsApp</label>
+<div class="tel">
+<select class="inp" name="indicatif" aria-label="Indicatif du pays" autocomplete="tel-country-code">
+<option value="+212" selected>MA +212</option>
+<option value="+33">FR +33</option>
+<option value="+32">BE +32</option>
+<option value="+41">CH +41</option>
+<option value="+1">CA +1</option>
+<option value="+971">AE +971</option>
+<option value="+216">TN +216</option>
+<option value="+213">DZ +213</option>
+<option value="autre">Autre</option>
+</select>
+<input class="inp" id="f-tel" name="telephone" type="tel" inputmode="tel" autocomplete="tel-national" placeholder="6 12 34 56 78" required aria-describedby="e-tel">
+</div>
+<p class="err" id="e-tel"></p></div>
+
+<div class="box">
+<label class="check"><input type="checkbox" id="f-rappels" name="rappels" value="oui"><span><strong>Recevoir un rappel si je décroche</strong><small>La vidéo où vous vous êtes arrêté, de temps en temps. Facultatif, désactivable à tout moment.</small></span></label>
+<div class="seg" id="rappel-canal" role="radiogroup" aria-label="Recevoir les rappels par" hidden>
+<label><input type="radio" name="rappels_canal" value="WhatsApp" checked disabled>WhatsApp</label>
+<label><input type="radio" name="rappels_canal" value="Email" disabled>Email</label>
+</div>
+</div>
+
+<div class="field">
+<label for="f-code">Code promo <small>(facultatif)</small></label>
+<div class="promo"><input class="inp" id="f-code" name="code_promo" autocomplete="off" spellcheck="false" placeholder="Ex. META10" aria-describedby="m-code"><button class="btn btn-sm" type="button" id="b-code">Appliquer</button></div>
+<p class="promo-msg" id="m-code" role="status"></p>
+</div>
+
+<div class="cgv">
+<label class="check"><input type="checkbox" id="f-cgv" name="cgv" value="acceptées" required aria-describedby="e-cgv"><span>J'accepte les <a href="index.html#cgv">conditions générales de vente</a> et la <a href="index.html#confidentialite">politique de confidentialité</a>.</span></label>
+<p class="err" id="e-cgv"></p>
+</div>
+
+<button class="btn btn-block" type="submit" id="b-go"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2"></rect><path d="M8 10V7a4 4 0 018 0v3"></path></svg><span id="b-go-t">Passer au paiement · 2&#160;300&#160;DH</span></button>
+<p class="fine">Paiement sécurisé · <span class="ph">[moyen de paiement]</span> · Vos accès arrivent juste après.</p>
+</form>
+</section>
+
+<aside class="card sum" aria-label="Récapitulatif de la commande">
+<div class="sum-h"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 9L12 4 2 9l10 5 10-5z"></path><path d="M6 11.2V16c0 1.6 2.7 3 6 3s6-1.4 6-3v-4.8"></path></svg>La Skillerie · formation Meta Ads complète</div>
+<div class="sum-lines">
+<div><span>Formation complète</span><span>2&#160;300&#160;DH</span></div>
+<div class="disc" id="s-disc" hidden><span id="s-disc-l">Code promo</span><span id="s-disc-v"></span></div>
+</div>
+<div class="sum-total"><span>Total</span><strong id="s-total">2&#160;300 <small>DH</small></strong></div>
+<p class="sum-note">Paiement unique · accès à vie</p>
+<ul class="sum-list">
+<li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>9 modules en vidéo, à votre rythme</li>
+<li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>Communauté privée + réponse d'un expert</li>
+<li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>Templates, prompts IA et pubs commentées</li>
+<li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>Attestation de fin de formation</li>
+</ul>
+<p class="sum-q">Une question avant de payer ? <a href="index.html#hesitez">Parlons-en en 1 to 1</a></p>
+</aside>
+
+</div>
+</main>
+
+<footer class="foot">
+<div class="wrap">
+<span>© 2026 Y&amp;N Growth. Tous droits réservés.</span>
+<nav aria-label="Informations légales"><a href="index.html#mentions">Mentions légales</a><a href="index.html#cgv">CGV</a><a href="index.html#confidentialite">Confidentialité</a></nav>
+</div>
+</footer>
+
+<script>
+/* ============ À RÉGLER ============
+   PAYMENT_URL : le lien de paiement (Stripe, CMI, YouCan Pay, etc.).
+   Tant qu'il est vide, le bouton mène à merci.html en mode aperçu.
+   CODES : codes promo affichés ici. La réduction réelle doit aussi
+   être configurée chez le prestataire de paiement. */
+var PAYMENT_URL = "";
+var PRICE = 2300;
+var CODES = { META10: 10 };
+/* ================================== */
+
+(function () {
+  var form = document.getElementById("ins-form");
+  var go = document.getElementById("b-go");
+  var goT = document.getElementById("b-go-t");
+  var code = document.getElementById("f-code");
+  var codeMsg = document.getElementById("m-code");
+  var rappels = document.getElementById("f-rappels");
+  var canal = document.getElementById("rappel-canal");
+  var applied = null;
+
+  function dh(n) { return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, "\u00a0"); }
+
+  function total() { return applied ? Math.round(PRICE * (100 - CODES[applied]) / 100) : PRICE; }
+
+  function render() {
+    var t = total();
+    document.getElementById("s-total").innerHTML = dh(t) + " <small>DH</small>";
+    goT.textContent = "Passer au paiement · " + dh(t) + "\u00a0DH";
+    form.elements.total.value = t + " DH";
+    var disc = document.getElementById("s-disc");
+    disc.hidden = !applied;
+    if (applied) {
+      document.getElementById("s-disc-l").textContent = "Code " + applied + " (-" + CODES[applied] + "\u00a0%)";
+      document.getElementById("s-disc-v").textContent = "-" + dh(PRICE - t) + "\u00a0DH";
+    }
+  }
+
+  function applyCode(silent) {
+    var v = code.value.trim().toUpperCase();
+    code.value = v;
+    if (!v) { applied = null; codeMsg.textContent = ""; codeMsg.className = "promo-msg"; render(); return true; }
+    if (Object.prototype.hasOwnProperty.call(CODES, v)) {
+      applied = v;
+      codeMsg.textContent = "Code " + v + " appliqué : -" + CODES[v] + "\u00a0% sur votre commande.";
+      codeMsg.className = "promo-msg ok";
+      render();
+      return true;
+    }
+    applied = null;
+    render();
+    if (!silent) { codeMsg.textContent = "Ce code n'est pas valide."; codeMsg.className = "promo-msg ko"; }
+    return false;
+  }
+
+  document.getElementById("b-code").addEventListener("click", function () { applyCode(false); });
+  code.addEventListener("keydown", function (e) { if (e.key === "Enter") { e.preventDefault(); applyCode(false); } });
+  /* Le choix du canal n'est envoyé que si la case est cochée */
+  function syncRappels() {
+    canal.hidden = !rappels.checked;
+    canal.querySelectorAll("input").forEach(function (r) { r.disabled = !rappels.checked; });
+  }
+  rappels.addEventListener("change", syncRappels);
+  syncRappels();
+
+  /* Code transmis dans l'adresse : inscription.html?code=META10 */
+  var q = new URLSearchParams(location.search).get("code");
+  if (q) { code.value = q; applyCode(true); }
+
+  var rules = {
+    prenom: function (v) { return v.trim() ? "" : "Indiquez votre prénom."; },
+    nom: function (v) { return v.trim() ? "" : "Indiquez votre nom."; },
+    email: function (v) { return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.trim()) ? "" : "Indiquez une adresse email valide, par exemple nom@gmail.com."; },
+    telephone: function (v) { var d = v.replace(/\D/g, ""); return d.length >= 8 && d.length <= 15 ? "" : "Indiquez un numéro valide, par exemple 6 12 34 56 78."; }
+  };
+  var errIds = { prenom: "e-prenom", nom: "e-nom", email: "e-email", telephone: "e-tel" };
+
+  function check(name) {
+    var el = form.elements[name];
+    var msg = rules[name](el.value);
+    el.setAttribute("aria-invalid", msg ? "true" : "false");
+    document.getElementById(errIds[name]).textContent = msg;
+    return !msg;
+  }
+
+  Object.keys(rules).forEach(function (name) {
+    var el = form.elements[name];
+    el.addEventListener("blur", function () { if (el.value) check(name); });
+    el.addEventListener("input", function () { if (el.getAttribute("aria-invalid") === "true") check(name); });
+  });
+  form.elements.cgv.addEventListener("change", function () { if (this.checked) document.getElementById("e-cgv").textContent = ""; });
+
+  function save() {
+    try {
+      sessionStorage.setItem("lsk-lead", JSON.stringify({ prenom: form.elements.prenom.value.trim(), email: form.elements.email.value.trim() }));
+    } catch (e) { /* stockage indisponible : la page merci reste générique */ }
+  }
+
+  function next() {
+    location.href = PAYMENT_URL || "merci.html?apercu=1";
+  }
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var firstBad = null;
+    Object.keys(rules).forEach(function (name) { if (!check(name) && !firstBad) firstBad = form.elements[name]; });
+    if (!form.elements.cgv.checked) {
+      document.getElementById("e-cgv").textContent = "Cochez cette case pour continuer.";
+      if (!firstBad) firstBad = form.elements.cgv;
+    }
+    if (code.value.trim() && !applyCode(false) && !firstBad) firstBad = code;
+    if (firstBad) { firstBad.focus(); return; }
+
+    go.disabled = true;
+    goT.textContent = "Un instant…";
+    save();
+
+    /* Envoi des coordonnées à Netlify Forms. Si l'envoi échoue ou tarde,
+       on passe quand même au paiement : on ne bloque jamais un achat. */
+    var done = false;
+    function once() { if (!done) { done = true; next(); } }
+    setTimeout(once, 4000);
+    try {
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(new FormData(form)).toString()
+      }).then(once, once);
+    } catch (err) { once(); }
+  });
+
+  /* Retour arrière depuis la page de paiement : bouton à nouveau actif */
+  window.addEventListener("pageshow", function () { go.disabled = false; render(); });
+  render();
+})();
+</script>
+</body>
+</html>

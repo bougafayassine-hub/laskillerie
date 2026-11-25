@@ -6,7 +6,10 @@ Page de vente de la formation Meta Ads de La Skillerie (créée par l'agence Y&N
 
 ```
 public/               dossier publié par Netlify
-  index.html          la page (styles et script inclus dans le fichier)
+  index.html          la page de vente (styles et script inclus dans le fichier)
+  inscription.html    coordonnées avant paiement (tous les boutons « Démarrer » y mènent)
+  merci.html          page de remerciement après paiement (avec l'encart « site par Y&N Growth »)
+  assets/css/pages.css  styles communs à inscription.html et merci.html
   404.html            page affichée pour une adresse inexistante
   robots.txt
   favicon.svg, favicon-32.png, apple-touch-icon.png   (monogramme « S » provisoire, en attendant le logo)
@@ -20,6 +23,19 @@ netlify.toml          dossier publié, en-têtes de sécurité et de cache
 2. Laisser **Build command** vide : le dossier `public` est déjà indiqué dans `netlify.toml`.
 3. **Deploy**. Ensuite, chaque push sur `main` redéploie le site automatiquement.
 4. **Domain management** pour brancher le domaine définitif.
+
+## Parcours d'achat
+
+1. Les boutons « Démarrer » et « Démarrer la formation » ouvrent `inscription.html`.
+2. Le formulaire relève prénom, nom, email, téléphone WhatsApp, le choix des rappels et le code promo, puis les envoie à **Netlify Forms** (onglet « Forms » du site Netlify ; activer « Form detection » si ce n'est pas fait). Vérifier dans l'offre Netlify si les envois de formulaire consomment des crédits.
+3. Le client part ensuite vers le paiement. Si l'envoi du formulaire échoue, il passe quand même au paiement : un achat n'est jamais bloqué.
+4. Après le paiement, le prestataire doit renvoyer vers `/merci.html`.
+
+À régler en haut du script de `inscription.html` :
+
+- `PAYMENT_URL` : le lien de paiement. Tant qu'il est vide, le bouton mène à `merci.html?apercu=1` (bandeau rose « Aperçu »).
+- `CODES` : codes promo affichés (`META10` = -10 %). La réduction doit aussi être créée chez le prestataire de paiement, sinon le client paiera le plein tarif.
+- Un code peut être prérempli par l'adresse : `inscription.html?code=META10`.
 
 ## Prévisualiser sans déployer sur Netlify
 
@@ -38,7 +54,7 @@ githack garde la page en cache quelques minutes : si une modification n'apparaî
 ## À compléter avant le lancement
 
 - **Les cases roses** : témoignages, note Trustpilot, durées et nombre de vidéos, `[mois année]`, `[nom]` de la communauté, `[moyen de paiement]`, `[15 minutes]`, `[email]`, `[WhatsApp]`, etc.
-- **Les liens provisoires** (`href="#…"`) : `#calendly`, `#whatsapp`, `#trustpilot`, `#video`, `#video-temoignage`, `#paiement`, `#espace-eleve`, `#attestation`, `#journal`, `#blog`, `#mentions`, `#cgv`, `#confidentialite`.
+- **Les liens provisoires** (`href="#…"`) : `#calendly`, `#whatsapp` (aussi sur `merci.html`), `#trustpilot`, `#video`, `#video-temoignage`, `#espace-eleve` (aussi sur `merci.html`), `#attestation`, `#journal`, `#blog`, `#mentions`, `#cgv`, `#confidentialite`.
 - **Le domaine** : dans `index.html`, décommenter les balises `canonical` et `og:url` et y mettre l'adresse définitive.
 - **Indexation** : tant que des cases roses sont visibles, on peut activer le bloc `noindex` prévu en bas de `netlify.toml`.
 
