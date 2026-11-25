@@ -53,7 +53,7 @@ githack garde la page en cache quelques minutes : si une modification n'apparaî
 
 ## À compléter avant le lancement
 
-- **Les cases roses** : témoignages, note Trustpilot, durées et nombre de vidéos, `[mois année]`, `[nom]` de la communauté, `[moyen de paiement]`, `[15 minutes]`, `[email]`, `[WhatsApp]`, etc.
+- **Les cases roses** : témoignages, note Trustpilot, durées et nombre de vidéos, `[mois année]`, `[moyen de paiement]`, `[15 minutes]`, `[email]`, `[WhatsApp]`, etc.
 - **Les liens provisoires** (`href="#…"`) : `#calendly`, `#whatsapp` (aussi sur `merci.html`), `#trustpilot`, `#video`, `#video-temoignage`, `#espace-eleve` (aussi sur `merci.html`), `#attestation`, `#journal`, `#blog`, `#mentions`, `#cgv`, `#confidentialite`.
 - **Le domaine** : dans `index.html`, décommenter les balises `canonical` et `og:url` et y mettre l'adresse définitive.
 - **Indexation** : tant que des cases roses sont visibles, on peut activer le bloc `noindex` prévu en bas de `netlify.toml`.

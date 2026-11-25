@@ -142,6 +142,13 @@ body{background:#FBF8F3}
 @media (max-width: 480px){.mk-root{--gx:16px}}
 @media (min-width: 1101px) and (max-width: 1240px){.mk-fc{right:-12px !important}}
 #mk-pv[hidden]{display:none}
+/* Bloc « Yassine Bougafa, fondateur » : lien vers la section formateur */
+.mk-bio{border:1px solid transparent;transition:border-color .2s ease,background-color .2s ease}
+.mk-bio:hover{border-color:color-mix(in srgb,var(--d-accent) 55%,transparent);background:color-mix(in srgb,var(--d-bg) 65%,var(--d-card)) !important}
+.mk-bio-cta{display:inline-flex;align-items:center;gap:5px;margin-top:4px;font-size:13px;font-weight:600;color:var(--d-accent)}
+.mk-bio-arrow{transition:transform .2s ease}
+.mk-bio:hover .mk-bio-arrow{transform:translateX(3px)}
+@media (prefers-reduced-motion: reduce){.mk-bio,.mk-bio-arrow{transition:none}}
 @media (max-width: 420px){.mk-eyebrow{font-size:12px !important;padding:4px 10px !important;gap:6px !important;letter-spacing:-.005em}}
 /* Avis qui défilent sous le hero : cartes compactes */
 .mk-tq{margin:0 12px 0 0;width:min(260px,74vw);flex:none;box-sizing:border-box;display:flex;flex-direction:column;gap:8px;padding:12px 14px;border-radius:12px;background:var(--d-card);border:1px solid var(--d-line2)}
@@ -275,7 +282,7 @@ Offre de lancement : <strong style="font-weight: 700;">-10 % pour les 10 premiè
 
 <figure class="mk-tq">
 <figcaption><span class="mk-tq-av"></span><span class="mk-tq-who"><b>[Prénom N.]</b><span>[Activité · ville]</span></span><span class="mk-tq-st" aria-hidden="true">★★★★★</span></figcaption>
-<blockquote><span style="background: var(--d-ph-bg); color: var(--d-ph-ink); border-radius: 4px; padding: 0 4px;">[Ce que la communauté ou l'expert lui a apporté]</span></blockquote>
+<blockquote><span style="background: var(--d-ph-bg); color: var(--d-ph-ink); border-radius: 4px; padding: 0 4px;">[Ce que La Skillerie Club ou l'expert lui a apporté]</span></blockquote>
 </figure>
 
 <figure class="mk-tq">
@@ -305,7 +312,7 @@ Offre de lancement : <strong style="font-weight: 700;">-10 % pour les 10 premiè
 
 <figure class="mk-tq" aria-hidden="true">
 <figcaption><span class="mk-tq-av"></span><span class="mk-tq-who"><b>[Prénom N.]</b><span>[Activité · ville]</span></span><span class="mk-tq-st" aria-hidden="true">★★★★★</span></figcaption>
-<blockquote><span style="background: var(--d-ph-bg); color: var(--d-ph-ink); border-radius: 4px; padding: 0 4px;">[Ce que la communauté ou l'expert lui a apporté]</span></blockquote>
+<blockquote><span style="background: var(--d-ph-bg); color: var(--d-ph-ink); border-radius: 4px; padding: 0 4px;">[Ce que La Skillerie Club ou l'expert lui a apporté]</span></blockquote>
 </figure>
 
 <figure class="mk-tq" aria-hidden="true">
@@ -325,7 +332,7 @@ Offre de lancement : <strong style="font-weight: 700;">-10 % pour les 10 premiè
 <div style="flex: 999 1 560px; min-width: 0;">
 <div style="display: inline-flex; align-items: center; gap: 10px; font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: 16px;"><span style="width: 20px; height: 3px; border-radius: 2px; background: var(--accent);"></span>La formation en bref</div>
 <h2 style="margin: 0 0 20px; font-family: Archivo, Inter, sans-serif; font-weight: 800; font-size: clamp(26px, 2.9vw, 38px); line-height: 1.12; letter-spacing: -0.02em; color: var(--ink);">Tout Meta Ads, de la première campagne à la page qui convertit</h2>
-<p style="margin: 0 0 16px; font-size: 17px; color: var(--text); max-width: 680px;">La Skillerie vous forme en vidéo à la publicité sur Facebook et Instagram, que vous vendiez au Maroc ou à l'international. On vous donne chaque étape, filmée dans un vrai compte publicitaire : il ne vous reste qu'à l'appliquer sur le vôtre. Et pour vos questions, la communauté privée est animée par l'équipe Y&amp;N Growth.</p>
+<p style="margin: 0 0 16px; font-size: 17px; color: var(--text); max-width: 680px;">La Skillerie vous forme en vidéo à la publicité sur Facebook et Instagram, que vous vendiez au Maroc ou à l'international. On vous donne chaque étape, filmée dans un vrai compte publicitaire : il ne vous reste qu'à l'appliquer sur le vôtre. Et pour vos questions, il y a La Skillerie Club : notre groupe privé sur WhatsApp, animé par l'équipe Y&amp;N Growth.</p>
 <p style="margin: 0 0 24px; font-size: 17px; color: var(--text); max-width: 680px;">Elle est conçue et tournée par Yassine (@yass2ads), cofondateur de Y&amp;N Growth, agence de communication Meta Ads avec des clients en France et au Maroc.</p>
 
 <h3 style="margin: 0 0 14px; font-size: 18px; font-weight: 600; color: var(--ink);">À la fin de la formation, vous saurez :</h3>
@@ -379,10 +386,10 @@ Offre de lancement : <strong style="font-weight: 700;">-10 % pour les 10 premiè
 <div style="padding: 12px 14px; border-radius: 12px; border: 1px solid var(--d-line2);"><div style="font-family: Archivo, Inter, sans-serif; font-weight: 800; font-size: 24px; line-height: 1; color: var(--d-accent);">+100</div><div style="margin-top: 6px; font-size: 13px; line-height: 1.35; color: var(--d-soft);">clients accompagnés en 9&#160;mois</div></div>
 <div style="padding: 12px 14px; border-radius: 12px; border: 1px solid var(--d-line2);"><div style="font-family: Archivo, Inter, sans-serif; font-weight: 800; font-size: 24px; line-height: 1; color: var(--d-accent);">+7 ans</div><div style="margin-top: 6px; font-size: 13px; line-height: 1.35; color: var(--d-soft);">d'expérience en e-commerce et Meta Ads</div></div>
 </div>
-<div style="display: flex; align-items: center; gap: 12px; margin-top: auto; padding: 10px 12px; border-radius: 12px; background: var(--d-bg);">
+<a href="#formateurs" class="mk-bio" aria-label="Voir la bio de Yassine Bougafa, fondateur" style="display: flex; align-items: center; gap: 12px; margin-top: auto; padding: 10px 12px; border-radius: 12px; background: var(--d-bg); text-decoration: none;">
 <img src="assets/img/yassine-bougafa-200.webp" width="200" height="200" loading="lazy" decoding="async" alt="" style="flex: none; width: 44px; height: 44px; border-radius: 50%; object-fit: cover; object-position: 50% 30%; border: 2px solid var(--d-accent);">
-<div style="min-width: 0;"><div style="font-size: 14px; font-weight: 600; color: var(--d-ink);">Yassine Bougafa, fondateur</div><div style="font-size: 13px; line-height: 1.45; color: var(--d-soft);">Plus de 7 ans d'expérience en e-commerce et en Meta Ads, expert en sites web</div></div>
-</div>
+<div style="min-width: 0;"><div style="font-size: 14px; font-weight: 600; color: var(--d-ink);">Yassine Bougafa, fondateur</div><div style="font-size: 13px; line-height: 1.45; color: var(--d-soft);">Plus de 7 ans d'expérience en e&#8209;commerce et en Meta Ads, expert en sites web</div><span class="mk-bio-cta">Voir la bio <svg class="mk-bio-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></div>
+</a>
 </article>
 
 <article style="flex: 1 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 14px; padding: clamp(18px, 2.4vw, 26px); border-radius: 20px; background: color-mix(in srgb, var(--d-accent) 10%, var(--d-card)); border: 1px solid color-mix(in srgb, var(--d-accent) 40%, transparent);">
@@ -564,7 +571,7 @@ Offre de lancement : <strong style="font-weight: 700;">-10 % pour les 10 premiè
 </summary>
 <ul style="list-style: none; margin: 0; padding: 0 clamp(14px, 4vw, 18px) 12px clamp(24px, 6vw, 68px);">
 <li style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; padding: 8px 0; border-top: 1px solid var(--line-soft); font-size: 15px; color: var(--text);"><svg style="flex: none; color: var(--muted);" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M10.5 9l4 3-4 3z" fill="currentColor"></path></svg>Comment suivre la formation à votre rythme</li>
-<li style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; padding: 8px 0; border-top: 1px solid var(--line-soft); font-size: 15px; color: var(--text);"><svg style="flex: none; color: var(--muted);" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M10.5 9l4 3-4 3z" fill="currentColor"></path></svg>Rejoindre la communauté et poser une bonne question</li>
+<li style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; padding: 8px 0; border-top: 1px solid var(--line-soft); font-size: 15px; color: var(--text);"><svg style="flex: none; color: var(--muted);" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M10.5 9l4 3-4 3z" fill="currentColor"></path></svg>Rejoindre La Skillerie Club sur WhatsApp et poser une bonne question</li>
 <li style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; padding: 8px 0; border-top: 1px solid var(--line-soft); font-size: 15px; color: var(--text);"><svg style="flex: none; color: var(--muted);" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M10.5 9l4 3-4 3z" fill="currentColor"></path></svg>Activer les notifications WhatsApp ou email (si vous le souhaitez)</li>
 </ul>
 </details>
@@ -694,7 +701,7 @@ Offre de lancement : <strong style="font-weight: 700;">-10 % pour les 10 premiè
 <div style="font-size: 14px; color: var(--d-soft);">Paiement unique · accès dès le paiement</div>
 <ul style="list-style: none; margin: 18px 0 20px; padding: 16px 0 0; border-top: 1px solid var(--d-line); display: flex; flex-direction: column; gap: 9px;">
 <li style="display: flex; gap: 10px; align-items: flex-start; font-size: 14px;"><svg style="flex: none; margin-top: 3px; color: var(--d-accent);" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg><span>9 modules · <span style="background: var(--d-ph-bg); color: var(--d-ph-ink); border-radius: 4px; padding: 0 4px;">[X] h</span> de vidéo</span></li>
-<li style="display: flex; gap: 10px; align-items: flex-start; font-size: 14px;"><svg style="flex: none; margin-top: 3px; color: var(--d-accent);" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>Communauté + réponse d'un expert</li>
+<li style="display: flex; gap: 10px; align-items: flex-start; font-size: 14px;"><svg style="flex: none; margin-top: 3px; color: var(--d-accent);" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>La Skillerie Club (WhatsApp) + réponse d'un expert</li>
 <li style="display: flex; gap: 10px; align-items: flex-start; font-size: 14px;"><svg style="flex: none; margin-top: 3px; color: var(--d-accent);" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>Templates, prompts IA, pubs commentées</li>
 <li style="display: flex; gap: 10px; align-items: flex-start; font-size: 14px;"><svg style="flex: none; margin-top: 3px; color: var(--d-accent);" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>Accès à vie et attestation de fin de formation</li>
 </ul>
@@ -731,13 +738,109 @@ Offre de lancement : <strong style="font-weight: 700;">-10 % pour les 10 premiè
 </li>
 <li style="display: flex; gap: clamp(18px, 3vw, 32px); align-items: flex-start; padding: 22px 0; border-top: 1px solid var(--line);">
 <span aria-hidden="true" style="flex: none; width: 1.9em; font-family: Archivo, Inter, sans-serif; font-size: clamp(30px, 3.6vw, 44px); font-weight: 600; line-height: 1; color: var(--ink);">03</span>
-<div style="flex: 1 1 auto; min-width: 0;"><h3 style="margin: 2px 0 8px; font-size: 20px; font-weight: 600; color: var(--ink);">Demandez</h3><p style="margin: 0; font-size: 16px; color: var(--text);">Une question sur un point de la formation ? Posez-la dans la communauté : un autre membre ou un expert de l'agence vous répond.</p></div>
+<div style="flex: 1 1 auto; min-width: 0;"><h3 style="margin: 2px 0 8px; font-size: 20px; font-weight: 600; color: var(--ink);">Demandez</h3><p style="margin: 0; font-size: 16px; color: var(--text);">Une question sur un point de la formation ? Posez-la dans La Skillerie Club, sur WhatsApp : un autre membre ou un expert de l'agence vous répond.</p></div>
 </li>
 <li style="display: flex; gap: clamp(18px, 3vw, 32px); align-items: flex-start; padding: 22px 0; border-top: 1px solid var(--line);">
 <span aria-hidden="true" style="flex: none; width: 1.9em; font-family: Archivo, Inter, sans-serif; font-size: clamp(30px, 3.6vw, 44px); font-weight: 600; line-height: 1; color: var(--ink);">04</span>
 <div style="flex: 1 1 auto; min-width: 0;"><h3 style="margin: 2px 0 8px; font-size: 20px; font-weight: 600; color: var(--ink);">Restez à jour</h3><p style="margin: 0; font-size: 16px; color: var(--text);">Meta change souvent ses outils. Les vidéos concernées sont refaites, et chaque changement est daté dans le journal des mises à jour.</p></div>
 </li>
 </ol>
+</div>
+</section>
+
+<!-- FORMATEURS -->
+<section id="formateurs" style="padding: clamp(44px, 5.5vw, 72px) 0; background: var(--bg2); scroll-margin-top: 72px;">
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 var(--gx); box-sizing: border-box;">
+<div style="max-width: 760px; margin-bottom: 28px;">
+<div style="display: inline-flex; align-items: center; gap: 10px; font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: 16px;"><span style="width: 20px; height: 3px; border-radius: 2px; background: var(--accent);"></span>Votre formateur</div>
+<h2 style="margin: 0 0 16px; font-family: Archivo, Inter, sans-serif; font-weight: 800; font-size: clamp(26px, 2.9vw, 38px); line-height: 1.12; letter-spacing: -0.02em; color: var(--ink);">Appris sur le terrain, pas dans un manuel</h2>
+<p style="margin: 0; font-size: 17px; color: var(--text);">Qui est mieux placé pour vous apprendre la publicité que les personnes qui la gèrent pour leurs clients ? La formation est conçue et tournée par Yassine Bougafa, cofondateur de Y&amp;N Growth.</p>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: stretch;">
+<article style="flex: 999 1 560px; min-width: 0; border: 1px solid var(--line); border-radius: 20px; overflow: hidden; background: var(--surface); display: flex; flex-wrap: wrap;">
+<div style="flex: 1 1 220px; min-height: 280px; position: relative; overflow: hidden; background: var(--chip);"><img src="assets/img/yassine-bougafa.webp" width="800" height="800" loading="lazy" decoding="async" alt="Yassine Bougafa, cofondateur de Y&amp;N Growth" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 28%;"></div>
+<div style="flex: 999 1 320px; min-width: 0; padding: clamp(18px, 2.6vw, 28px); display: flex; flex-direction: column;">
+<h3 style="margin: 0; font-size: 22px; font-weight: 600;">Yassine Bougafa</h3>
+<div style="font-size: 14px; font-weight: 500; color: var(--muted); margin: 4px 0 12px;">Expert Meta Ads • Sites web performants</div>
+<p style="margin: 0 0 14px; font-size: 15px; color: var(--text);">Expert en Meta Ads et en sites e-commerce, Yassine est cofondateur de l'agence Y&amp;N Growth. Fort de <strong style="font-weight: 600; color: var(--ink);">plus de 7 ans d'expérience</strong> en publicité Meta, il gère lui-même les campagnes des clients de l'agence, au Maroc et en France.</p>
+<p style="margin: 0 0 14px; font-size: 15px; color: var(--text);">Il a d'abord mené ses propres projets digitaux en parallèle d'une carrière de consultant bancaire en France, spécialisé dans l'optimisation du parcours client : deux boutiques en ligne qui ont atteint <strong style="font-weight: 600; color: var(--ink);">20&#160;000&#160;€ de chiffre d'affaires mensuel</strong> entre 2017 et 2019, puis une plateforme de mise en relation entre influenceurs et restaurants.</p>
+<p style="margin: 0 0 20px; font-size: 15px; color: var(--text);">Avec Y&amp;N Growth, qui a accompagné <strong style="font-weight: 600; color: var(--ink);">plus de 100 clients en 9 mois</strong>, il transmet dans cette formation la méthode qu'il applique chaque jour.</p>
+<div style="margin-top: auto; display: flex; flex-wrap: wrap; gap: 10px;">
+<a href="https://www.linkedin.com/in/yassine-bougafa-11922417b/" target="_blank" rel="noopener" class="mk-btn" aria-label="Profil LinkedIn de Yassine Bougafa" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 10px 16px; box-sizing: border-box; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); font-size: 14px; font-weight: 600; color: var(--ink); text-decoration: none;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>LinkedIn</a>
+<a href="https://www.instagram.com/yass2ads/" target="_blank" rel="noopener" class="mk-btn" aria-label="Instagram de Yassine Bougafa (@yass2ads)" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 10px 16px; box-sizing: border-box; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); font-size: 14px; font-weight: 600; color: var(--ink); text-decoration: none;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><path d="M17.5 6.5h.01"></path></svg>Instagram</a>
+</div>
+</div>
+</article>
+
+<div style="flex: 1 1 340px; min-width: 0; box-sizing: border-box; background: var(--d-bg); color: var(--d-ink); border-radius: 20px; padding: clamp(18px, 2.6vw, 28px); display: flex; flex-direction: column; gap: 16px;">
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 12px;"><img src="assets/img/yn-growth-logo-blanc.webp" width="520" height="87" loading="lazy" decoding="async" alt="Y&amp;N Growth" style="display: block; height: 30px; width: auto;"><span style="font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; border: 1px solid var(--d-line2); color: var(--d-soft);">L'agence derrière la formation</span></div>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: var(--d-text);">Agence marocaine spécialisée en SEO, GEO, Meta Ads et création de sites. Elle accompagne des clients au Maroc et en France.</p>
+<div style="display: flex; flex-direction: column; gap: 8px;">
+<div style="display: flex; align-items: center; gap: 14px; background: var(--d-card); border-radius: 12px; padding: 10px 14px;"><span style="flex: none; width: 68px; font-family: Archivo, Inter, sans-serif; font-size: 22px; font-weight: 800; line-height: 1; color: var(--d-accent);">+100</span><span style="font-size: 14px; line-height: 1.35; color: var(--d-text);">clients accompagnés en 9&#160;mois</span></div>
+<div style="display: flex; align-items: center; gap: 14px; background: var(--d-card); border-radius: 12px; padding: 10px 14px;"><span style="flex: none; width: 68px; font-family: Archivo, Inter, sans-serif; font-size: 22px; font-weight: 800; line-height: 1; color: var(--d-accent);">+30</span><span style="font-size: 14px; line-height: 1.35; color: var(--d-text);">sites créés</span></div>
+<div style="display: flex; align-items: center; gap: 14px; background: var(--d-card); border-radius: 12px; padding: 10px 14px;"><span style="flex: none; width: 68px; font-family: Archivo, Inter, sans-serif; font-size: 22px; font-weight: 800; line-height: 1; color: var(--d-accent);">+280</span><span style="font-size: 14px; line-height: 1.35; color: var(--d-text);">campagnes gérées</span></div>
+</div>
+<a href="https://yngrowth.com" class="mk-btn" style="margin-top: auto; display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 12px 18px; border-radius: 999px; border: 1px solid var(--d-line3); font-size: 14px; font-weight: 600; color: var(--d-ink); text-decoration: none; min-height: 46px; box-sizing: border-box;">Découvrir l'agence <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- BONUS -->
+<section id="bonus" style="padding: clamp(44px, 5.5vw, 72px) 0; background: var(--bg); scroll-margin-top: 72px;">
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 var(--gx); box-sizing: border-box;">
+<div style="max-width: 760px; margin-bottom: 28px;">
+<div style="display: inline-flex; align-items: center; gap: 10px; font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: 16px;"><span style="width: 20px; height: 3px; border-radius: 2px; background: var(--accent);"></span>Inclus dans la formation</div>
+<h2 style="margin: 0 0 16px; font-family: Archivo, Inter, sans-serif; font-weight: 800; font-size: clamp(26px, 2.9vw, 38px); line-height: 1.12; letter-spacing: -0.02em; color: var(--ink);">Ce qui vous aide à aller jusqu'au bout</h2>
+<p style="margin: 0; font-size: 17px; color: var(--text);">En plus des vidéos, on vous donne tout ce qu'il faut pour lancer vos pubs : un expert qui répond à vos questions et des modèles prêts à l'emploi. Et si vous décrochez ou manquez de motivation, on vous envoie un rappel ! Vous choisissez au moment de l'achat.</p>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 14px; margin-bottom: 14px;">
+<article style="background: var(--surface); border: 1px solid var(--line); border-radius: 20px; padding: clamp(18px, 4.5vw, 24px); display: flex; flex-direction: column; gap: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center;"><span style="width: 40px; height: 40px; border-radius: 11px; background: var(--accent); color: var(--on-accent); display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"></circle><path d="M2.5 20c.8-3.6 3.4-5.5 6.5-5.5s5.7 1.9 6.5 5.5"></path><path d="M16 4.6a3.5 3.5 0 010 6.8M18.5 14.8c1.6.8 2.6 2.6 3 5.2"></path></svg></span><span style="font-size: 12px; font-weight: 600; padding: 3px 10px; border-radius: 999px; background: var(--chip); color: var(--text);">Inclus</span></div>
+<h3 style="margin: 4px 0 0; font-size: 19px; font-weight: 600;">La Skillerie Club</h3>
+<p style="margin: 0; font-size: 15px; color: var(--text);">Le groupe WhatsApp privé des élèves : un expert de l'agence répond à vos questions et regarde vos campagnes. Vous profitez aussi des échanges avec les autres membres.</p>
+</article>
+<article style="background: var(--surface); border: 1px solid var(--line); border-radius: 20px; padding: clamp(18px, 4.5vw, 24px); display: flex; flex-direction: column; gap: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center;"><span style="width: 40px; height: 40px; border-radius: 11px; background: var(--accent); color: var(--on-accent); display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 16V11a6 6 0 0112 0v5l1.5 2h-15z"></path><path d="M10 20.5a2 2 0 004 0"></path></svg></span><span style="font-size: 12px; font-weight: 600; padding: 3px 10px; border-radius: 999px; background: var(--chip); color: var(--text);">Optionnel · à choisir à l'achat</span></div>
+<h3 style="margin: 4px 0 0; font-size: 19px; font-weight: 600;">Des notifications pour accélérer, si vous le souhaitez</h3>
+<p style="margin: 0; font-size: 15px; color: var(--text);">Si vous décrochez ou manquez de motivation, on vous envoie un rappel par WhatsApp ou email : la vidéo où vous vous êtes arrêté. Vous choisissez au moment de l'achat ; sinon, aucune notification.</p>
+</article>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 14px;">
+<article style="background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px;">
+<svg style="margin-bottom: 10px;" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"></path><path d="M14 3v5h5M9 13h7M9 17h5"></path></svg>
+<h3 style="margin: 0 0 6px; font-size: 16px; font-weight: 600;">Templates et briefs créatifs</h3>
+<p style="margin: 0; font-size: 14px; color: var(--text);">Structures de campagnes, briefs pour vos créas, checklists de lancement, prêts à copier.</p>
+</article>
+<article style="background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px;">
+<svg style="margin-bottom: 10px;" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"></rect><path d="M9 7V5a2 2 0 012-2h2a2 2 0 012 2v2M3 13h18"></path></svg>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 0 0 6px;"><h3 style="margin: 0; font-size: 16px; font-weight: 600;">Le kit freelance</h3><span style="flex: none; white-space: nowrap; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 999px; background: var(--chip); color: var(--text);">Freelance</span></div>
+<p style="margin: 0; font-size: 14px; color: var(--text);">Un brief client pour faciliter l'onboarding, et des conseils sur la posture à adopter face à vos futurs clients.</p>
+</article>
+<article style="background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px;">
+<svg style="margin-bottom: 10px;" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"></path><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"></path></svg>
+<h3 style="margin: 0 0 6px; font-size: 16px; font-weight: 600;">Analyser ses campagnes avec Claude</h3>
+<p style="margin: 0; font-size: 14px; color: var(--text);">La méthode et les prompts pour faire lire vos résultats par l'IA et repérer quoi optimiser, avec votre propre compte Claude.</p>
+</article>
+<article style="background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px;">
+<svg style="margin-bottom: 10px;" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect></svg>
+<h3 style="margin: 0 0 6px; font-size: 16px; font-weight: 600;">Pubs marocaines et françaises commentées</h3>
+<p style="margin: 0; font-size: 14px; color: var(--text);">De vraies pubs tirées de la Bibliothèque publicitaire de Meta, décortiquées : ce qui marche et ce qui ne marche pas.</p>
+</article>
+<article style="background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px;">
+<svg style="margin-bottom: 10px;" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="17" rx="2"></rect><path d="M9 4V3h6v1M9 12.5l2 2 4-4"></path></svg>
+<h3 style="margin: 0 0 6px; font-size: 16px; font-weight: 600;">Un examen final, si vous le souhaitez</h3>
+<p style="margin: 0; font-size: 14px; color: var(--text);">Un quiz facultatif pour vérifier que vous maîtrisez chaque étape avant de lancer vos campagnes.</p>
+</article>
+<article style="background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px;">
+<svg style="margin-bottom: 10px;" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5.5"></circle><path d="M8.5 13.5L7 21l5-2.5 5 2.5-1.5-7.5"></path></svg>
+<h3 style="margin: 0 0 6px; font-size: 16px; font-weight: 600;">Attestation de fin de formation</h3>
+<p style="margin: 0; font-size: 14px; color: var(--text);">À ajouter à votre profil LinkedIn en un clic, avec une adresse de vérification unique.</p>
+</article>
+</div>
 </div>
 </section>
 
@@ -791,102 +894,6 @@ Offre de lancement : <strong style="font-weight: 700;">-10 % pour les 10 premiè
 <p style="margin: 0 0 14px; font-size: 14px; line-height: 1.55; color: var(--text);">Une campagne se lance en quelques minutes et s'arrête en un clic. Une mauvaise idée coûte peu quand on sait lire ses chiffres.</p>
 <a href="#programme" class="mk-btn" style="margin-top: auto; display: flex; align-items: center; justify-content: center; gap: 7px; padding: 10px 12px; border-radius: 10px; background: var(--d-bg); color: var(--d-ink); font-size: 14px; font-weight: 600; line-height: 1.25; text-align: center; white-space: nowrap; text-decoration: none; min-height: 44px; box-sizing: border-box;"><svg style="flex: none; color: var(--d-accent);" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V11M10 20V5M16 20v-6M21 20H3"></path></svg>Apprenez à lire vos chiffres</a>
 </div>
-</div>
-</div>
-</section>
-
-<!-- FORMATEURS -->
-<section id="formateurs" style="padding: clamp(44px, 5.5vw, 72px) 0; background: var(--bg); scroll-margin-top: 72px;">
-<div style="max-width: 1200px; margin: 0 auto; padding: 0 var(--gx); box-sizing: border-box;">
-<div style="max-width: 760px; margin-bottom: 28px;">
-<div style="display: inline-flex; align-items: center; gap: 10px; font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: 16px;"><span style="width: 20px; height: 3px; border-radius: 2px; background: var(--accent);"></span>Votre formateur</div>
-<h2 style="margin: 0 0 16px; font-family: Archivo, Inter, sans-serif; font-weight: 800; font-size: clamp(26px, 2.9vw, 38px); line-height: 1.12; letter-spacing: -0.02em; color: var(--ink);">Appris sur le terrain, pas dans un manuel</h2>
-<p style="margin: 0; font-size: 17px; color: var(--text);">Qui est mieux placé pour vous apprendre la publicité que les personnes qui la gèrent pour leurs clients ? La formation est conçue et tournée par Yassine Bougafa, cofondateur de Y&amp;N Growth.</p>
-</div>
-
-<div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: stretch;">
-<article style="flex: 999 1 560px; min-width: 0; border: 1px solid var(--line); border-radius: 20px; overflow: hidden; background: var(--surface); display: flex; flex-wrap: wrap;">
-<div style="flex: 1 1 220px; min-height: 280px; position: relative; overflow: hidden; background: var(--chip);"><img src="assets/img/yassine-bougafa.webp" width="800" height="800" loading="lazy" decoding="async" alt="Yassine Bougafa, cofondateur de Y&amp;N Growth" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 28%;"></div>
-<div style="flex: 999 1 320px; min-width: 0; padding: clamp(18px, 2.6vw, 28px); display: flex; flex-direction: column;">
-<h3 style="margin: 0; font-size: 22px; font-weight: 600;">Yassine Bougafa</h3>
-<div style="font-size: 14px; font-weight: 500; color: var(--muted); margin: 4px 0 12px;">Expert Meta Ads • Sites web performants</div>
-<p style="margin: 0 0 14px; font-size: 15px; color: var(--text);">Expert en Meta Ads et en sites e-commerce, Yassine est cofondateur de l'agence Y&amp;N Growth. Fort de <strong style="font-weight: 600; color: var(--ink);">plus de 7 ans d'expérience</strong> en publicité Meta, il gère lui-même les campagnes des clients de l'agence, au Maroc et en France.</p>
-<p style="margin: 0 0 14px; font-size: 15px; color: var(--text);">Il a d'abord mené ses propres projets digitaux en parallèle d'une carrière de consultant bancaire en France, spécialisé dans l'optimisation du parcours client : deux boutiques en ligne qui ont atteint <strong style="font-weight: 600; color: var(--ink);">20&#160;000&#160;€ de chiffre d'affaires mensuel</strong> entre 2017 et 2019, puis une plateforme de mise en relation entre influenceurs et restaurants.</p>
-<p style="margin: 0 0 20px; font-size: 15px; color: var(--text);">Avec Y&amp;N Growth, qui a accompagné <strong style="font-weight: 600; color: var(--ink);">plus de 100 clients en 9 mois</strong>, il transmet dans cette formation la méthode qu'il applique chaque jour.</p>
-<div style="margin-top: auto; display: flex; flex-wrap: wrap; gap: 10px;">
-<a href="https://www.linkedin.com/in/yassine-bougafa-11922417b/" target="_blank" rel="noopener" class="mk-btn" aria-label="Profil LinkedIn de Yassine Bougafa" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 10px 16px; box-sizing: border-box; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); font-size: 14px; font-weight: 600; color: var(--ink); text-decoration: none;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>LinkedIn</a>
-<a href="https://www.instagram.com/yass2ads/" target="_blank" rel="noopener" class="mk-btn" aria-label="Instagram de Yassine Bougafa (@yass2ads)" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 10px 16px; box-sizing: border-box; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); font-size: 14px; font-weight: 600; color: var(--ink); text-decoration: none;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><path d="M17.5 6.5h.01"></path></svg>Instagram</a>
-</div>
-</div>
-</article>
-
-<div style="flex: 1 1 340px; min-width: 0; box-sizing: border-box; background: var(--d-bg); color: var(--d-ink); border-radius: 20px; padding: clamp(18px, 2.6vw, 28px); display: flex; flex-direction: column; gap: 16px;">
-<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 12px;"><img src="assets/img/yn-growth-logo-blanc.webp" width="520" height="87" loading="lazy" decoding="async" alt="Y&amp;N Growth" style="display: block; height: 30px; width: auto;"><span style="font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; border: 1px solid var(--d-line2); color: var(--d-soft);">L'agence derrière la formation</span></div>
-<p style="margin: 0; font-size: 15px; line-height: 1.6; color: var(--d-text);">Agence marocaine spécialisée en SEO, GEO, Meta Ads et création de sites. Elle accompagne des clients au Maroc et en France.</p>
-<div style="display: flex; flex-direction: column; gap: 8px;">
-<div style="display: flex; align-items: center; gap: 14px; background: var(--d-card); border-radius: 12px; padding: 10px 14px;"><span style="flex: none; width: 68px; font-family: Archivo, Inter, sans-serif; font-size: 22px; font-weight: 800; line-height: 1; color: var(--d-accent);">+100</span><span style="font-size: 14px; line-height: 1.35; color: var(--d-text);">clients accompagnés en 9&#160;mois</span></div>
-<div style="display: flex; align-items: center; gap: 14px; background: var(--d-card); border-radius: 12px; padding: 10px 14px;"><span style="flex: none; width: 68px; font-family: Archivo, Inter, sans-serif; font-size: 22px; font-weight: 800; line-height: 1; color: var(--d-accent);">+30</span><span style="font-size: 14px; line-height: 1.35; color: var(--d-text);">sites créés</span></div>
-<div style="display: flex; align-items: center; gap: 14px; background: var(--d-card); border-radius: 12px; padding: 10px 14px;"><span style="flex: none; width: 68px; font-family: Archivo, Inter, sans-serif; font-size: 22px; font-weight: 800; line-height: 1; color: var(--d-accent);">+280</span><span style="font-size: 14px; line-height: 1.35; color: var(--d-text);">campagnes gérées</span></div>
-</div>
-<a href="https://yngrowth.com" class="mk-btn" style="margin-top: auto; display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 12px 18px; border-radius: 999px; border: 1px solid var(--d-line3); font-size: 14px; font-weight: 600; color: var(--d-ink); text-decoration: none; min-height: 46px; box-sizing: border-box;">Découvrir l'agence <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
-</div>
-</div>
-</div>
-</section>
-
-<!-- BONUS -->
-<section id="bonus" style="padding: clamp(44px, 5.5vw, 72px) 0; background: var(--bg2); scroll-margin-top: 72px;">
-<div style="max-width: 1200px; margin: 0 auto; padding: 0 var(--gx); box-sizing: border-box;">
-<div style="max-width: 760px; margin-bottom: 28px;">
-<div style="display: inline-flex; align-items: center; gap: 10px; font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: 16px;"><span style="width: 20px; height: 3px; border-radius: 2px; background: var(--accent);"></span>Inclus dans la formation</div>
-<h2 style="margin: 0 0 16px; font-family: Archivo, Inter, sans-serif; font-weight: 800; font-size: clamp(26px, 2.9vw, 38px); line-height: 1.12; letter-spacing: -0.02em; color: var(--ink);">Ce qui vous aide à aller jusqu'au bout</h2>
-<p style="margin: 0; font-size: 17px; color: var(--text);">En plus des vidéos, on vous donne tout ce qu'il faut pour lancer vos pubs : un expert qui répond à vos questions et des modèles prêts à l'emploi. Et si vous décrochez ou manquez de motivation, on vous envoie un rappel ! Vous choisissez au moment de l'achat.</p>
-</div>
-
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 14px; margin-bottom: 14px;">
-<article style="background: var(--surface); border-radius: 20px; padding: clamp(18px, 4.5vw, 24px); display: flex; flex-direction: column; gap: 10px;">
-<div style="display: flex; justify-content: space-between; align-items: center;"><span style="width: 40px; height: 40px; border-radius: 11px; background: var(--accent); color: var(--on-accent); display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"></circle><path d="M2.5 20c.8-3.6 3.4-5.5 6.5-5.5s5.7 1.9 6.5 5.5"></path><path d="M16 4.6a3.5 3.5 0 010 6.8M18.5 14.8c1.6.8 2.6 2.6 3 5.2"></path></svg></span><span style="font-size: 12px; font-weight: 600; padding: 3px 10px; border-radius: 999px; background: var(--chip); color: var(--text);">Inclus</span></div>
-<h3 style="margin: 4px 0 0; font-size: 19px; font-weight: 600;">La communauté <span style="background: #FCE7F3; color: #9D174D; border-radius: 4px; padding: 0 4px;">[nom]</span></h3>
-<p style="margin: 0; font-size: 15px; color: var(--text);">Un espace privé où un expert de l'agence répond à vos questions et regarde vos campagnes. Vous profitez aussi des échanges avec les autres membres.</p>
-</article>
-<article style="background: var(--surface); border-radius: 20px; padding: clamp(18px, 4.5vw, 24px); display: flex; flex-direction: column; gap: 10px;">
-<div style="display: flex; justify-content: space-between; align-items: center;"><span style="width: 40px; height: 40px; border-radius: 11px; background: var(--accent); color: var(--on-accent); display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 16V11a6 6 0 0112 0v5l1.5 2h-15z"></path><path d="M10 20.5a2 2 0 004 0"></path></svg></span><span style="font-size: 12px; font-weight: 600; padding: 3px 10px; border-radius: 999px; background: var(--chip); color: var(--text);">Optionnel · à choisir à l'achat</span></div>
-<h3 style="margin: 4px 0 0; font-size: 19px; font-weight: 600;">Des notifications pour accélérer, si vous le souhaitez</h3>
-<p style="margin: 0; font-size: 15px; color: var(--text);">Si vous décrochez ou manquez de motivation, on vous envoie un rappel par WhatsApp ou email : la vidéo où vous vous êtes arrêté. Vous choisissez au moment de l'achat ; sinon, aucune notification.</p>
-</article>
-</div>
-
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 14px;">
-<article style="background: var(--surface); border-radius: 16px; padding: 18px 20px;">
-<svg style="margin-bottom: 10px;" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"></path><path d="M14 3v5h5M9 13h7M9 17h5"></path></svg>
-<h3 style="margin: 0 0 6px; font-size: 16px; font-weight: 600;">Templates et briefs créatifs</h3>
-<p style="margin: 0; font-size: 14px; color: var(--text);">Structures de campagnes, briefs pour vos créas, checklists de lancement, prêts à copier.</p>
-</article>
-<article style="background: var(--surface); border-radius: 16px; padding: 18px 20px;">
-<svg style="margin-bottom: 10px;" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"></rect><path d="M9 7V5a2 2 0 012-2h2a2 2 0 012 2v2M3 13h18"></path></svg>
-<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 0 0 6px;"><h3 style="margin: 0; font-size: 16px; font-weight: 600;">Le kit freelance</h3><span style="flex: none; white-space: nowrap; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 999px; background: var(--chip); color: var(--text);">Freelance</span></div>
-<p style="margin: 0; font-size: 14px; color: var(--text);">Un brief client pour faciliter l'onboarding, et des conseils sur la posture à adopter face à vos futurs clients.</p>
-</article>
-<article style="background: var(--surface); border-radius: 16px; padding: 18px 20px;">
-<svg style="margin-bottom: 10px;" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"></path><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"></path></svg>
-<h3 style="margin: 0 0 6px; font-size: 16px; font-weight: 600;">Analyser ses campagnes avec Claude</h3>
-<p style="margin: 0; font-size: 14px; color: var(--text);">La méthode et les prompts pour faire lire vos résultats par l'IA et repérer quoi optimiser, avec votre propre compte Claude.</p>
-</article>
-<article style="background: var(--surface); border-radius: 16px; padding: 18px 20px;">
-<svg style="margin-bottom: 10px;" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect></svg>
-<h3 style="margin: 0 0 6px; font-size: 16px; font-weight: 600;">Pubs marocaines et françaises commentées</h3>
-<p style="margin: 0; font-size: 14px; color: var(--text);">De vraies pubs tirées de la Bibliothèque publicitaire de Meta, décortiquées : ce qui marche et ce qui ne marche pas.</p>
-</article>
-<article style="background: var(--surface); border-radius: 16px; padding: 18px 20px;">
-<svg style="margin-bottom: 10px;" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="17" rx="2"></rect><path d="M9 4V3h6v1M9 12.5l2 2 4-4"></path></svg>
-<h3 style="margin: 0 0 6px; font-size: 16px; font-weight: 600;">Un examen final, si vous le souhaitez</h3>
-<p style="margin: 0; font-size: 14px; color: var(--text);">Un quiz facultatif pour vérifier que vous maîtrisez chaque étape avant de lancer vos campagnes.</p>
-</article>
-<article style="background: var(--surface); border-radius: 16px; padding: 18px 20px;">
-<svg style="margin-bottom: 10px;" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5.5"></circle><path d="M8.5 13.5L7 21l5-2.5 5 2.5-1.5-7.5"></path></svg>
-<h3 style="margin: 0 0 6px; font-size: 16px; font-weight: 600;">Attestation de fin de formation</h3>
-<p style="margin: 0; font-size: 14px; color: var(--text);">À ajouter à votre profil LinkedIn en un clic, avec une adresse de vérification unique.</p>
-</article>
 </div>
 </div>
 </section>
@@ -960,7 +967,7 @@ Offre de lancement : <strong style="font-weight: 700;">-10 % pour les 10 premiè
 <li style="display: flex; gap: 10px; align-items: flex-start; font-size: 15px;"><svg style="flex: none; margin-top: 3px;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg><strong style="font-weight: 600;">Accès à vie à la formation</strong></li>
 <li style="display: flex; gap: 10px; align-items: flex-start; font-size: 15px;"><svg style="flex: none; margin-top: 3px;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg><span>9 modules, <span style="background: #FCE7F3; color: #9D174D; border-radius: 4px; padding: 0 4px;">[X] h</span> de vidéo</span></li>
 <li style="display: flex; gap: 10px; align-items: flex-start; font-size: 15px;"><svg style="flex: none; margin-top: 3px;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>Un examen final facultatif pour tester vos connaissances</li>
-<li style="display: flex; gap: 10px; align-items: flex-start; font-size: 15px;"><svg style="flex: none; margin-top: 3px;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>Communauté privée + réponse d'un expert</li>
+<li style="display: flex; gap: 10px; align-items: flex-start; font-size: 15px;"><svg style="flex: none; margin-top: 3px;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>La Skillerie Club sur WhatsApp + réponse d'un expert</li>
 <li style="display: flex; gap: 10px; align-items: flex-start; font-size: 15px;"><svg style="flex: none; margin-top: 3px;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>Rappels WhatsApp ou email, si vous le choisissez à l'achat</li>
 <li style="display: flex; gap: 10px; align-items: flex-start; font-size: 15px;"><svg style="flex: none; margin-top: 3px;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>Templates et briefs créatifs</li>
 <li style="display: flex; gap: 10px; align-items: flex-start; font-size: 15px;"><svg style="flex: none; margin-top: 3px;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>Méthode et prompts pour analyser vos campagnes avec Claude</li>
